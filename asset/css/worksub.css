@@ -1,0 +1,313 @@
+body {
+    background-color: #fff;
+    font-family: 'NanumSquare', '나눔스퀘어', 'Arial', 'Malgun Gothic', sans-serif;
+}
+h3 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 70px 0 50px 0;
+    letter-spacing: 2px;
+    font-size: 2em;
+    font-weight: 600;
+    font-style: italic;
+}
+h3::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color: #2d2d2d;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: super;
+}
+/* work sub */
+.work_sub {
+    width: 90%;
+    margin: 0 auto;
+}
+h4 {
+    font-size: 1.25em;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.work_sub p {
+    line-height: 1.5em;
+    margin-bottom: 100px;
+}
+.work_sub .sitemap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.work_sub .sitemap li {
+    width: 100%;
+    position: relative;
+    color: #ededed;
+    text-align: center;
+    line-height: 80px;
+    width:calc(100% / 6);
+    background-color: #2d2d2d;
+    margin-right: .5%;
+    font-size: 1.05em;
+}
+.work_sub .sitemap li:last-child {
+    margin-right: 0;
+}
+.work_sub .breakpoints {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.work_sub .breakpoints li {
+    position: relative;
+    color: #2d2d2d;
+    text-align: center;
+    line-height: 50px;
+    width:calc(100% / 4);
+    border: 1px solid #2d2d2d;
+    margin-right: 1%;
+    font-size: 1.05em;
+}
+.work_sub .breakpoints li:last-child {
+    margin-right: 0;
+}
+
+.pofolmain {
+    height: 70vh;
+    overflow: hidden;
+}
+.pofolmain img {}
+
+.suggest {
+    width: 100%;
+    display: flex;
+    font-family: inherit;
+}
+.suggest dl {
+    font-family: inherit;
+}
+.suggest dl dt {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: inherit;
+    font-family: inherit;
+}
+.suggest dl dd {
+    line-height: 1.5em;
+    color: inherit;
+}
+.problems,
+.suggestion {
+    padding: 50px;
+    font-family: inherit;
+    /* min-height: 130vh; */
+}
+.problems h4,
+.suggestion h4 {}
+.problems dl,
+.suggestion dl {}
+.problems dt,
+.suggestion dt {}
+.problems dd,
+.suggestion dd {}
+.problems {
+    width: 50%;
+    background-color: #EDEDED;
+    color: #2d2d2d;
+    position: relative;
+}
+.problems h4 {}
+.problems dl {}
+.problems dt {}
+.problems dd {}
+.suggestion {
+    width: 50%;
+    background-color: #2d2d2d;
+    color: #ededed;
+}
+.suggestion h4 {}
+.suggestion dl {}
+.suggestion dt {}
+.suggestion dd {}
+
+.cross-prodinfo {
+    display: flex;
+}
+.crossbox,
+.prodinfo {
+    width: 50%;
+}
+.crossbox .cross .cross_row,
+.crossbox .cross .cross_column {
+    width: 50px;
+    height: 2px;
+    background-color: #BCF314;
+}
+.crossbox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+}
+.crossbox .cross {
+    position: relative;
+}
+.crossbox .cross .cross_row {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 25px);
+}
+.crossbox .cross .cross_column {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 25px);
+    transform: rotateZ(90deg);
+}
+/* cross animation */
+.crossbox .cross:nth-of-type(1) {
+    animation: cross-animation 2s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate-reverse both;
+}
+.crossbox .cross:nth-of-type(2) {
+    animation: cross-animation 2s .5s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate-reverse both;
+}
+.crossbox .cross:nth-of-type(3) {
+    animation: cross-animation 2s .7s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate-reverse both;
+}
+.crossbox .cross:nth-of-type(4) {
+    animation: cross-animation 2s 1s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate-reverse both;
+}
+.crossbox .cross:nth-of-type(5) {
+    animation: cross-animation 2s 3.2s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate-reverse both;
+}
+.crossbox .cross:nth-of-type(6) {
+    animation: cross-animation 2s 3.5s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate-reverse both;
+}
+.crossbox .cross:nth-of-type(7) {
+    animation: cross-animation 2s 5s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate-reverse both;
+}
+.crossbox .cross:nth-of-type(8) {
+    animation: cross-animation 2s 5.2s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate-reverse both;
+}
+.crossbox .cross:nth-of-type(9) {
+    animation: cross-animation 2s 5.5s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate-reverse both;
+}
+
+@keyframes cross-animation {
+    0% {
+        transform: rotateZ(0);
+    }
+    100% {
+        transform: rotateZ(90deg);
+    }
+}
+
+.prodinfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 5%;
+}
+.prodinfo section:nth-of-type(-n+2) {
+    
+}
+.prodinfo section:nth-of-type(-n+2):nth-of-type(-n+4) {
+    margin-bottom: 10px;
+}
+.prodinfo section h5 {
+    font-size: 1.05em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.prodinfo section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.prodinfo section ul {}
+.prodinfo section ul li {
+    line-height: 2em;
+}
+.prodinfo section dl {
+    clear: both;
+}
+.prodinfo section dl dt {
+    float: left;
+    line-height: 2em;
+    margin-right: 9px;
+}
+.prodinfo section dl dd {
+    line-height: 2em;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-bottom: 100px;
+}
+.gallery {
+}
+.gallery img {
+    
+}
+.development {
+    line-height: 1.5em;
+}
+.development::before {
+    content: '';    
+    display: inline-block;
+    width: 2px;
+    height: 100%;
+    background-color:#BCF314;
+}
+.sub_btn {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+.sub_btn::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.sub_btn a {
+    width: calc(50% - .1px);
+    padding: 50px 80px;
+    text-align: center;
+    border: 1px solid #2d2d2d;
+    font-size: 1.15em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    transition: all .2s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+.sub_btn a:hover {
+    background-color: #BCF314;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+.sub_btn a:first-child {
+    border-right: 0px solid #2d2d2d;
+    float: left;
+}
+.sub_btn a:first-child:Before {
+    content: '< < <';
+    display: inline-block;
+    color: #BCF314;
+    margin-right: 7px;
+    font-size: 1.5em;
+    vertical-align: -.09em;
+    font-weight: 700;
+}
+.sub_btn a:last-child::after {
+    content: '> > >';
+    display: inline-block;
+    color: #BCF314;
+    margin-left: 7px;
+    font-size: 1.5em;
+    vertical-align: -.12em;
+    font-weight: 700;
+}
+
+

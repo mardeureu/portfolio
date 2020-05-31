@@ -1,0 +1,311 @@
+@media (max-width: 1024px) {
+    /* about */
+    .history {
+        display: block;
+    }
+    .history h5 {
+        margin-top: 5px;
+    }
+    .history .history-right,
+    .history .history-left {
+        text-align: left;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .history .history-left .career:last-child li:last-child {
+        margin-bottom: 0;
+    }
+    .skills {
+        height: auto;
+        display: block;
+    }
+    .hardskills,
+    .softskills {
+        width: 100%;
+    }
+    .project-move {
+        height: 10vh;
+    }
+
+    /* contact */
+    form {
+        margin-right: 0;
+    }
+    .contact-wrap {
+        display: block;
+    }
+    .mycontact h5 {
+        margin-top: 70px;
+    }
+    .mycontact h5::after {
+        content: '';
+        width: 100%;
+    }
+    .mycontact dl {
+        clear: both;
+        margin-bottom: 30px;
+    }
+    .mycontact dl dt {
+        margin-right: 15px;
+        float: left;
+    }
+    form fieldset {
+        display: block;
+        text-align: left;
+    }
+    form fieldset input {
+        width: 85%;
+    }
+    form fieldset textarea {
+        width: 100%;
+    }
+    form fieldset input:focus {
+        width: 90%;
+    }
+    form fieldset textarea:focus {
+        width: 100%;
+    }
+    form fieldset button {
+        width: 100%;
+        color: #ededed;
+        padding: 10px 0px;
+        border: 1px solid #ededed;
+        margin-top: 20px;
+        letter-spacing: 5px;
+        transition: all .6s cubic-bezier(0.44, 0.4, 0.14, 0.57);
+    }
+    /* work sub */
+    .pofolmain {
+        height: auto;
+        overflow: visible;
+    }
+    .suggest {
+        display: block;
+        width: 100%;
+    }
+    .problems,
+    .suggestion {
+        width: 100%;
+        padding: 0;
+    }
+    .problems h4,
+    .suggestion h4 {
+        width: 90%;
+        margin: 0 auto;
+        line-height: 3em;
+        padding-top: 40px;
+        padding-bottom: 0;
+    }
+    .problems dl,
+    .suggestion dl {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+    .problems dl dt,
+    .suggestion dl dt {
+        margin-top: 25px;
+    }
+    .sub_btn a {
+        padding: 20px 80px;
+    }
+    .cross-prodinfo {
+        display: block;
+        width: 100%;
+    }
+    .crossbox,
+    .prodinfo {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .prodinfo {
+        margin-right: 0;
+    }
+    .crossbox {
+        width: 90%;
+        margin: 20px auto 0;
+        gap: 30px;
+    }
+    .crossbox .cross {
+        margin: 0 auto;
+    }
+    .crossbox .cross .cross_row,
+    .crossbox .cross .cross_column {
+        width: 30px;
+        height: 2px;
+    }
+
+    @keyframes cross-animation {
+        0% {
+            transform: rotateZ(0);
+        }
+        100% {
+            transform: rotateZ(-90deg);
+        }
+    }
+
+/*1024 END*/
+}
+@media (max-width: 768px) {
+    /* about */
+    .profile dl {
+        width: 100px;
+        font-size: .9em;
+    }
+    .profile figure {
+        text-align: center;
+    }
+    .profile figure img {
+        margin-top: 80px;
+        width: 70%;
+    }
+    .histoty_wrap {
+        position: relative;
+    }
+    .circle-motion {
+        width: 100%;
+        position: absolute;
+        top: 2%;
+        left: -20%;        
+    }
+    .project-move p::after {
+        content: '';
+        display: inline-block;
+        width: 0;
+        margin-right: 0;
+    }
+    .project-move span {
+        margin-left: 5px;
+    }
+    .profile::before {
+        width: 70vw;
+        height: 60vw;
+    }
+    /* contact */
+
+    /* work sub */
+    .work_sub p {
+        margin-bottom: 50px;
+    }
+    .work_sub .sitemap {
+        width: 100%;
+        display: block;
+        margin-bottom: 50px;
+    }
+    .work_sub .sitemap li {
+        width: 100%;
+        line-height: 2em;
+        margin-bottom: .5%;
+    }
+    .work_sub .breakpoints {
+        margin-bottom: 50px;
+    }
+    .work_sub .breakpoints li {
+        line-height: 2em;
+    }
+    .problems h4,
+    .suggestion h4 {
+        line-height: 2em;
+        padding-top: 50px;
+    }
+    .gallery {
+        display: block;
+        margin-bottom: 0;
+    }
+    .gallery img {
+        margin-bottom: 2px;
+    }
+    .gallery img:last-child {
+        margin-bottom: 0;
+    }
+    h4.work_sub {
+        line-height: 2em;
+        padding-top: 50px;
+    }
+    .sub_btn {
+        margin-top: 50px;
+    }
+    .sub_btn a {
+        width: calc(50% - .1px);
+        padding: 15px 0;
+        text-align: center;
+        border: 0px solid #2d2d2d;
+        font-size: 1.15em;
+        font-weight: 300;
+        letter-spacing: 1px;
+        transition: all .2s cubic-bezier(0.47, 0, 0.745, 0.715);
+    }
+    .sub_btn a:first-child:Before {
+        content: '<';
+        display: inline-block;
+        color: #BCF314;
+        margin-right: 7px;
+        font-size: 1.5em;
+        vertical-align: -.09em;
+        font-weight: 700;
+    }
+    .sub_btn a:last-child::after {
+        content: '>';
+        display: inline-block;
+        color: #BCF314;
+        margin-left: 7px;
+        font-size: 1.5em;
+        vertical-align: -.12em;
+        font-weight: 700;
+    }
+    
+
+/*768 END*/
+}
+@media (max-width: 480px) {
+    /* about */
+    header .header-wrap nav ul li {
+        padding-right: 20px;
+    }
+    h2 {
+        top: 30px;
+        font-size: 3.5em;
+    }
+    .profile figure {
+        text-align: center;
+    }
+    .profile figure img {
+        margin-top: 50px;
+        width: 70%;
+    }
+    .profile dl {
+        width: 80px;
+        font-size: .5em;
+    }
+    .history .history-left h3 {
+        padding-top: 80px;
+    }
+    .history h5 {
+        font-size: 1.2em;
+    }
+    .history h6 {
+        font-size: 1em;
+    }
+    .history ul li {
+        font-size: .9em;
+    }
+    .circle-motion {
+        width: 100%;
+        position: absolute;
+        top: 2%;
+        left: -10%;        
+    }
+    .circle-motion .circle {
+        width: 80px;
+        height: 80px;
+    }
+    .skills h5 {
+        font-style: 1.25em;
+    }
+    .profile::before {
+        width: 70vw;
+        height: 60vw;
+    }
+
+/*480 END*/
+}

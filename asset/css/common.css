@@ -1,0 +1,213 @@
+/*
+2020-05-22
+Writer : jung sunhee _ jung ocvong
+
+1. font
+- font-family
+KO basic : font-family: 'Montserrat', 'NanumSquare', '나눔스퀘어', 'Malgun Gothic', 'Arial', sans-serif;
+EN heading : font-family: 'Open Sans', sans-serif;
+EN paragraph, number: font-family: 'Montserrat', sans-serif;
+- font- weight
+Montserrat : 100, 200, 300, 400, 500, 600, 700, 800, 900;
+Open Sans : 400, 700;
+NanumSquare : 300, 400, 700, 800;
+
+2. color 
+bg color : #EDEDED / #D7D7D9
+point color : #BCF314
+text color : #2D2D2D
+*/
+* {
+    font-size: 14px;
+    font-family: 'Montserrat', 'NanumSquare', '나눔스퀘어', 'Arial', 'Malgun Gothic', sans-serif;
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    -ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+    margin:0px;
+    min-width: 320px;
+    direction: ltr;
+    text-align: left;
+    -webkit-tap-highlight-color: transparent;
+}
+ol,
+dl,
+ul,
+li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+dd
+{
+    margin: 0;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+span,
+em,
+strong,
+a{
+    display: inline-block;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6, p,
+figure {
+    margin: 0;
+}
+img {
+
+}
+input,
+button,
+select,
+textarea {
+    color: inherit;
+    font-family: inherit;
+    direction: ltr;
+    outline: none;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    outline: none;
+}
+img,
+input,
+button,
+select,
+textarea,
+object {
+    max-width: 100%;
+}
+img {
+    -webkit-user-drag: none;
+    height: auto;
+}
+fieldset {
+    min-width: auto;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    overflow: hidden;
+    resize: vertical;
+}
+figure {
+    font-size: 0;
+}
+figcaption {
+    font-size: 1rem;
+}
+::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+    background: transparent;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-ineer {
+    padding: 0;
+    border: 0;
+}
+
+/* font-face */
+@font-face {
+    font-family: "NanumSquare";
+    src: local('나눔스퀘어'),
+         local('나눔스퀘어 Light'),
+         local('나눔스퀘어 light'),
+         local('NanumSquare Light'),
+         local('NanumSquare light'),
+         url('../font/NanumSquare_woff2/NanumSquare_acL.woff2') format(woff2),
+         url('../font/NanumSquare_woff2/NanumSquareL.woff2') format(woff2),
+         url('../font/NanumSquare_woff/NanumSquare_acL.woff') format(woff),
+         url('../font/NanumSquare_woff/NanumSquareL.woff') format(woff);
+    font-weight: 300;
+}
+@font-face {
+    font-family: "NanumSquare";
+    src: local('나눔스퀘어'),
+    local('나눔스퀘어 Regular'), 
+    local('나눔스퀘어 regular'),
+    local('NanumSquare Regular'),
+    local('NanumSquare regular'),
+         url('../font/NanumSquare_woff2/NanumSquare_acR.woff2') format(woff2),
+         url('../font/NanumSquare_woff2/NanumSquareR.woff2') format(woff2),
+         url('../font/NanumSquare_woff/NanumSquare_acR.woff') format(woff),
+         url('../font/NanumSquare_woff/NanumSquareR.woff') format(woff);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "NanumSquare";
+    src: local('나눔스퀘어'),
+    local('나눔스퀘어 Bold'), 
+    local('나눔스퀘어 bold'),
+    local('NanumSquare Bold'),
+    local('NanumSquare bold'),
+         url('../font/NanumSquare_woff2/NanumSquare_acB.woff2') format(woff2),
+         url('../font/NanumSquare_woff2/NanumSquareB.woff2') format(woff2),
+         url('../font/NanumSquare_woff/NanumSquare_acB.woff') format(woff),
+         url('../font/NanumSquare_woff/NanumSquareB.woff') format(woff);
+    font-weight: 700;
+}
+@font-face {
+    font-family: "NanumSquare";
+    src: local('나눔스퀘어'),
+    local('나눔스퀘어 Extabold'), 
+    local('나눔스퀘어 extabold'),
+    local('NanumSquare Extabold'),
+    local('NanumSquare extabold'),
+         url('../font/NanumSquare_woff2/NanumSquare_acEB.woff2') format(woff2),
+         url('../font/NanumSquare_woff2/NanumSquareEB.woff2') format(woff2),
+         url('../font/NanumSquare_woff/NanumSquare_acEB.woff') format(woff),
+         url('../font/NanumSquare_woff/NanumSquareEB.woff') format(woff);
+    font-weight: 800;
+}
+
+
+
+
+
+/*
+
+background: linear-gradient(120deg, #BCF314 0% 16.67%, #2D2D2D 16.67% 33.33%, #D7D7D9 33.33% 50%, #D7D7D9 50% 66.67%, #EDEDED 66.67% 83.33%, #BCF314 83.33% 100%), conic-gradient(from 180deg, #BCF314 0%, #EDEDED 0 16.67%, #EDEDED 0 33.33%, #2D2D2D 0 50%, #2D2D2D 0 66.67%, #BCF314 0 83.33%, #D7D7D9 0 100%);
+    background-blend-mode: screen, normal;
+    
+    background-size: 400% 300%;
+    -webkit-animation: gradient-animation 2s cubic-bezier(0.52, 0.16, 0.24, 1) infinite alternate both;
+    animation: gradient-animation 6s cubic-bezier(0.52, 0.16, 0.24, 1) infinite alternate both;
+    background-attachment: fixed;
+
+
+
+@-webkit-keyframes gradient-animation {
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
+}
+@keyframes gradient-animation {
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
+}
+
+
+
+*
+/

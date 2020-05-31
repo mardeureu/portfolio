@@ -1,0 +1,412 @@
+body {
+    background-color: #BCF314;
+    overflow-x: hidden;
+}
+h2 {
+    z-index: 1;
+    animation: tit-animation .8s cubic-bezier(0.31, 0.13, 0.49, 1.1);
+}
+@keyframes tit-animation {
+    0% {
+        left: 100%;
+        color: rgba(255, 255, 255, 0);
+        transform: skew(-50deg);
+    }
+    100% {
+        right: 0;
+        color: rgba(45, 45, 45, 1)
+    }
+}
+h5 {
+    font-size: 1.35em;
+}
+.par {
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: #fff;
+}
+.par span {
+    font-size: inherit;
+    margin-top: 5vh;
+}
+.par span:nth-of-type(1) {
+    font-size: inherit;
+    animation: lpar 2s both;
+}
+.par span:nth-of-type(2) {
+    font-size: inherit;
+    animation: rpar 2s both;
+}
+@keyframes lpar {
+    0% {
+        transform: translateX(-30vw) translateZ(10px) scale3d(15, 15, 1);
+        filter: blur(5px);
+    }
+    50% {
+        transform: scale3d(1, 1, 1);
+        filter: blur(0);
+        padding-right: 0;
+    }
+    100% {
+        padding-right: 15vw;
+    }
+}
+@keyframes rpar {
+    0% {
+        transform: translateX(30vw) translateZ(10px) scale3d(15, 15, 1);
+        filter: blur(5px);
+    }
+    50% {
+        transform: scale3d(1, 1, 1);
+        filter: blur(0);
+        padding-left: 0;
+    }
+    100% {
+        padding-left: 15vw;
+    }
+}
+p {
+    opacity: 0;
+    width: 90%;
+    margin: 20px auto 0;
+    text-align: center;
+    overflow: hidden;
+    animation: txtblur 2s 2.2s both;
+}
+@keyframes txtblur {
+    0% {
+        opacity: 0;
+        letter-spacing: 5px;
+        filter: blur(9px);
+    }
+    100% {
+        opacity: 1;
+        letter-spacing: 0;
+        filter: blur(0);
+    }
+}
+/* profile */
+.profile {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+.profile figure img {
+    margin-top: 150px;
+}
+.profile dl {
+    font-size: 1.05em;
+    margin-bottom: 20px;
+    width: 150px;
+}
+.profile dl dt {
+    font-size: inherit;
+}
+.profile dl dd {
+    font-size: inherit;
+}
+.profile dl:nth-of-type(1) {
+    margin-left: 5%;
+    text-align: left;
+}
+.profile dl:nth-of-type(1) dt {}
+.profile dl:nth-of-type(1) dd {}
+.profile dl:nth-of-type(2) {
+    text-align: right;
+    margin-right: 5%;
+}
+.profile dl:nth-of-type(2) dt {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+}
+.profile dl:nth-of-type(2) dd {}
+/*
+.profile::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+    width: 90vh;
+    height: 80vh;
+    border-radius: 50%;
+    border-top: 2px solid #BCF314;
+    border-bottom: 2px solid #BCF314;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    transition: .2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.profile:hover::before {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-left: 2px solid #D7D7D9;
+    border-right: 2px solid #D7D7D9;
+}
+*/
+/* history */
+.history {
+    width: 100%;
+    background-color: #EDEDED;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.history h5 {
+    line-height: 2em;
+}
+.history h6 {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+.history ul {}
+.history ul li {
+    line-height: 2em;
+}
+.history .history-left {
+    margin-left: 5%;
+}
+.history .history-left h3 {
+    font-size: 1.8em;
+    letter-spacing: .5em;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+.history .history-left h4 {}
+.history .history-left h5 {
+    text-decoration: underline;
+    font-weight: 500;
+}
+.history .history-left h6 {}
+.history .history-left h6:nth-of-type(n+2):nth-of-type(-n+3) {
+    font-size: 1em;
+    line-height: 2.15em;
+    font-weight: 700;
+}
+.history .history-left h6:nth-of-type(n+2):nth-of-type(-n+3)::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 1px;
+    background-color:   #2D2D2D;
+    margin-right: 3px;
+    vertical-align: -.015em;
+}
+.history .history-left h6 time {
+    font-size: inherit;
+}
+.history .history-left .career {}
+.history .history-left .career li {}
+.history .history-left .career:last-child li:last-child {
+    margin-bottom: 50px;
+}
+.history .history-right {
+    text-align: right;
+    margin-right: 5%;
+}
+.history .history-right h5 {
+    text-decoration: underline;
+    font-weight: 500;
+}
+.circle-motion {
+    position: relative;
+    top: 20px;
+}
+.circle-motion .circle {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #2D2D2D;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 55%;
+    animation: circle 1.5s cubic-bezier(0.4, 0.1, 0.6, 0.9) infinite both alternate;
+}
+.circle-motion .circle:nth-of-type(1) {
+    left: 55%;
+}
+.circle-motion .circle:nth-of-type(2) {
+    left: 57%;
+}
+.circle-motion .circle:nth-of-type(3) {
+    left: 59%;
+}
+.circle-motion .circle:nth-of-type(4) {
+    left: 61%;
+}
+.circle-motion .circle:nth-of-type(5) {
+    left: 63%;
+}
+.circle-motion .circle:nth-of-type(6) {
+    left: 65%;
+}
+.circle-motion .circle:nth-of-type(7) {
+    left: 67%;
+}
+.circle-motion .circle:nth-of-type(8) {
+    left: 69%;
+}
+.circle-motion .circle:nth-of-type(9) {
+    left: 71%;
+}
+.circle-motion .circle:nth-of-type(10) {
+    left: 73%;
+}
+.circle-motion .circle:nth-of-type(11) {
+    left: 75%;
+}
+.history .history-right ul {}
+.history .history-right ul li {}
+.history .history-right a {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+.history .history-right a svg {
+    width: 1em;
+    height: 1em;
+    margin-left: 10px;
+    cursor: pointer;
+}
+@keyframes circle {
+    0% {
+        border-color: #BCF314;
+    }
+    100% {
+        left: 65%;
+    }
+}
+/* skills */
+.skills {
+    width: 100%;
+    min-height: 400px;
+    height: 60vh;
+    display: flex;
+    justify-content: flex-end;
+}
+.skills h5 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-decoration: underline;
+    font-weight: 500;
+    letter-spacing: 1.15px;
+}
+.skills section {}
+.skills section h6, p {
+    line-height: 30px;
+}
+.skills section h6 {
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.skills section p {
+    display: none;
+    margin-bottom: 5px;
+    opacity: 0.8;
+}
+.skills section:nth-of-type(1) p {
+    display: block;
+}
+.hardskills,
+.softskills {
+
+}
+.hardskills {
+    width: 50%;
+    height: 100%;
+    background-color: #2D2D2D;
+    color: #fff;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 50px;
+}
+.hardskills h5 {}
+.hardskills section {}
+.hardskills section h6 {}
+.hardskills section h6:hover {
+    color: #2d2d2d;
+    background-color: #ededed;
+}
+.hardskills section h6:active {
+    color: #2d2d2d;
+    background-color: #BCF314;
+}
+.hardskills section p {}
+
+.softskills {
+    width: 50%;
+    height: 100%;
+    background-color: #FFFFFF;
+    color: #2d2d2d;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 50px;
+}
+.softskills h5 {}
+.softskills section {}
+.softskills section h6 {}
+.softskills section h6:hover {
+    color: #ededed;
+    background-color: #2d2d2d;
+}
+.softskills section h6:active {
+    color: #2d2d2d;
+    background-color: #BCF314;
+}
+.softskills section p {}
+/* work move */
+.project-move {
+    width: 100%;
+    height: 30vh;
+    background-color: #BCF314;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-move p {
+    font-size: 1.15em;
+}
+.project-move p::after {
+    content: '';
+    display: inline-block;
+    width: 150px;
+    height: 1px;
+    background-color: #2d2d2d;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.project-move .offwhite {
+    padding: 0 15px;
+}
+.project-move .offwhite span {
+    width: 6px;
+    height: 18px;
+    margin-left: 2px;
+    background-color: #000;
+    transform: skewX(-30deg);
+    background-image: linear-gradient(90deg, #BCF314 0% 40%, #D7D7D9 40% 50%, #2d2d2d 50% 100%);
+    background-size: 300%;
+    animation: gradient-animation 1.8s .5s linear infinite alternate-reverse both;
+}
+@keyframes gradient-animation {
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
+}
+.project-move span {
+    font-size: 1.15em;
+    vertical-align: middle;
+}

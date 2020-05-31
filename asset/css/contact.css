@@ -1,0 +1,152 @@
+header .header-wrap nav ul li:hover a {
+    color: #2d2d2d;
+    transition: all .3s .1s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+body {
+    background-color: #2d2d2d;
+    max-height: 100vh;
+    overflow-x: hidden;
+}
+.header-wrap {
+    color: #ededed;
+}
+h2 {
+    z-index: -1;
+    color: #ededed;
+    animation: tit-animation .8s cubic-bezier(0.31, 0.13, 0.49, 1.1);
+}
+@keyframes tit-animation {
+    0% {
+        left: 100%;
+        color: rgba(45, 45, 45, 0);
+        transform: skew(-50deg);
+    }
+    100% {
+        right: 0;
+    }
+}
+.contact-wrap {
+    width: 90%;
+    padding-top: 8vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+/* mycontact */
+.mycontact {
+    color: #ededed;
+}
+.mycontact h5 {
+    font-size: 1.5em;
+}
+.mycontact h5::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: #BCF314;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.mycontact dl {
+    line-height: 1.8em;
+    font-size: 1.05em;
+}
+.mycontact dl dt {
+    font-weight: 700;
+    font-size: inherit;
+}
+.mycontact dl dd {
+    font-size: inherit;
+}
+.mycontact dl dd a {
+    position: relative;
+    transition: all .3s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+.mycontact dl dd a:hover {
+    color: #BCF314;    
+}
+.mycontact dl dd a::before {
+    content: '';
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #BCF314;
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    transition: all .3s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+.mycontact dl dd a:hover::before {
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);   
+}
+
+/* form */
+form {
+    margin-right: 5%;
+    /* float: right; */
+}
+form fieldset {
+    text-align: right;
+    border: 0px none;
+    display: flex;
+    flex-direction: column;
+}
+form fieldset legend {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+}
+form fieldset input,
+form fieldset textarea {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #ededed;
+    background-color: #2d2d2d;
+    color: #ededed;
+    padding: 10px 30px;
+}
+form fieldset input {
+    width: 30vw;
+    transition: .5s;
+    margin: 10px 0;
+}
+form fieldset textarea {
+    width: 40vw;
+    min-height: 30vh;
+    max-height: 30vh;
+    overflow-y: auto;
+    transition: .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+form fieldset input:focus {
+    width: 31vw;
+    padding: 11px 20px;
+    border-bottom: 1px solid #BCF314;
+}
+form fieldset textarea:focus {
+    width: 41vw;
+    padding: 11px 20px;
+    /* border-top: 1px solid #BCF314; */
+    border-bottom: 1px solid #BCF314;
+    background-color: #D7D7D9;
+    color: #2d2d2d;
+}
+form fieldset button {
+    color: #ededed;
+    padding: 10px 100px;
+    border: 1px solid #ededed;
+    margin-top: 20px;
+    letter-spacing: 5px;
+    transition: all .6s cubic-bezier(0.44, 0.4, 0.14, 0.57);
+}
+form fieldset button:hover {
+    background-color: #BCF314;
+    border: 1px solid #BCF314;
+    color: #2d2d2d;
+}

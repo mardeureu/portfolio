@@ -1,0 +1,122 @@
+body {
+    background-color: #ededed;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+h2 {
+    z-index: 2;
+    animation: tit-animation .8s cubic-bezier(0.31, 0.13, 0.49, 1.1);
+}
+@keyframes tit-animation {
+    0% {
+        left: 100%;
+        color: rgba(255, 255, 255, 0);
+        transform: skew(-50deg);
+    }
+    100% {
+        right: 0;
+        color: rgba(45, 45, 45, 1)
+    }
+}
+/* work */
+.work {
+    text-align: right;
+    position: relative;
+    top: -40px;
+    z-index: -1;
+}
+.work .work_slide_count {
+    padding-left: 100px;
+    padding-right: 100px;
+    letter-spacing: 1px;
+}
+.work .work_slide_scroll {
+    margin: 0 auto;
+    /* animation: scrollanimation 2s 1s cubic-bezier(0.47, 0, 0.745, 0.715) both infinite alternate; */
+}
+.work .work_slide_scroll::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #2D2D2D;
+    animation: none;
+    margin: 0 auto;
+}
+.work .work_slide_scroll::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #2D2D2D;
+    animation: none;
+    margin: 0 auto;
+}
+.swiper-container {
+    width: 100%;
+    height: ;
+}
+.work h5  {
+    display: inline-block;
+    font-size: 1.5em;
+}
+.work .text {
+    font-size: 1.5em;
+}
+.work .text::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 1px;
+    background-color: #2d2d2d;
+    margin-left: 5px;
+    margin-right: 5px;
+} 
+.progressbar {
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    position: relative;
+}
+.progressbar .loadbar {
+    width: 0%;
+    height: 5px;
+    background-color: #BCF314;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.work .slidebox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.work .slidebox a {
+    
+}
+.work .slidebox a img {
+    display: none;
+}
+.work .slidebox a.active img {
+    width: 100%;
+    display: block;
+}
+.swiper-slide a {
+    font-size: 0;
+}
+.m_click {
+    width: 8vh;
+    border: 1px solid #BCF314;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 8vh;
+    color: #BCF314;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 2.25vh;
+}
+/* swiper */
+.swiper-container {
+    width: 100%
+}
