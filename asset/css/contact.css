@@ -1,6 +1,21 @@
+header .header-wrap > a::before {
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+header .header-wrap > a:hover::before {
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+}
 header .header-wrap nav ul li:hover a {
-    color: #2d2d2d;
+    color: #BCF314;
     transition: all .3s .1s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+header .header-wrap nav ul li:hover a::after {
+    opacity: .4;
+    box-shadow: inset -10px -10px 5px -5px #aeaec0,
+                inset 10px 10px 5px -10px #fff,
+                -10px -15px 10px -5px #aeaec0,
+                10px 0px 10px -5px #fff;
 }
 body {
     background-color: #2d2d2d;

@@ -43,8 +43,8 @@ header .header-wrap > a::before {
     border-radius: 60%;
     margin-right: 6px;
     vertical-align: -.15em;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
+    border-top: 1px solid #2D2D2D;
+    border-bottom: 1px solid #2D2D2D;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
     transition: all .6s cubic-bezier(0.39, 0.575, 0.565, 1);
@@ -52,8 +52,8 @@ header .header-wrap > a::before {
 header .header-wrap > a:hover::before {
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
-    border-left: 1px solid;
-    border-right: 1px solid;
+    border-left: 1px solid #2D2D2D;
+    border-right: 1px solid #2D2D2D;
 }
 header .header-wrap nav {}
 header .header-wrap nav ul {
@@ -77,13 +77,20 @@ header .header-wrap nav ul li a::after {
     transform: translateX(-50%) translateY(-200%);
     z-index: -1;
     width: 150%;
-    height: 250%;
-    background-color: rgba(215, 215, 217, .8);
+    height: 49px;
+    border-radius: 10%;
+    background-color: rgba(240, 240, 243, .6);
     transition: all .2s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 header .header-wrap nav ul li:hover a::after {
+    opacity: .6;
     transform: translateX(-50%) translateY(-50%);
+    box-shadow: inset -10px -10px 5px -5px #aeaec0,
+                inset 10px 10px 5px -10px #fff,
+                -10px -15px 10px -5px #aeaec0,
+                10px 0px 10px -5px #fff;
 }
+
 
 /* heading */
 h2 {
