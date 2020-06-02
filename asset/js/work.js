@@ -24,8 +24,8 @@ window.addEventListener('onload',function(){
     $('')
 });
 */
-$(document).ready(function(){
-    $("img[]")
-    $('.loadbar').set
-});
-//슬라이드가 넘어가면 settimeout 3000
+// $(document).ready(function(){
+//     $("img[]")
+//     $('.loadbar').set
+// });
+// //슬라이드가 넘어가면 settimeout 3000

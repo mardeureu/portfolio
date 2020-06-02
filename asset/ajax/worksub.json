@@ -1,0 +1,165 @@
+{
+    "wokrsub_gadja": [
+        {
+            "project": "가자 프로덕션은 예술가들의 국제적인 활동을 위해 설립되었습니다. 차별화된 기획 프로젝트로 새로운 문화예술 씬(Scene)을 개척합니다. 문화예술에 대한 통합적인 사고 체계, 특정 장르에 얽매이지 않는 광범위한 스펙트럼은 중요한 차별화 요소입니다. 새로운 시도와 자유로운 실험을 통해 미래지향적인 예술 양식이 탄생할 것으로 기대합니다.",
+            "sitemap": [
+                "home",
+                "about",
+                "artist",
+                "product",
+                "tours",
+                "contact"
+            ],
+            "breakpoints": [
+                "1920px",
+                "1024px",
+                "768px",
+                "480px"
+            ],
+            "problemsTit": [
+                "01 시멘틱 마크업",
+                "02 웹 접근성",
+                "03 인터렉티브 웹",
+                ],
+            "problemsPara": [
+                "이는 검색엔진과 웹 접근성 외에도 기능 확장이 추가되었습니다. 현재 세계 70% 검색 점유율을 가진 구글 검색은 검색 로봇이 자동으로 탐색을 하는데 구조적이지 않은 마크업은 검색엔진에서 데이터 추출하기 어려워 웹 크롤링 되지 않는 문제점이 발생 할 수 있습니다. 이는 시멘틱 마크업만으로도 충분히 개선할 수 있습니다. 시멘틱 마크업 외에도 html의 rel 속성으로 검색엔진 최적화에 도움이 될 수 있습니다.",
+                "웹 접근성이란 장애와 상관없이 모든 사람이 접근할 수 있는 것을 의미합니다. 마치 아티스트 안은미의 작품 &lt;대심&gt;과 &lt;안심&gt;이 누구나 예술을 할 수 있다는 것을 보여준 것과 같습니다. 웹 접근성을 준수하면 시각장애인들이 사용하는 보조과학기술인 스크린리더기가 올바르게 동작하고, 운동장애인들이 웹을 탐색하지 위해 사용하는 키보드 오버레이로 정확하게 사이트를 탐색할 수 있습니다. 이를 위해서는 W3C표준에 따르고 의미론적 요소 사용을 지향해야 합니다. W3C 웹접근성 표준 외에도 스크린리더기를 위한 aria 속성을 추가하고, 시각적 안정을 위한 명도대비 접근성을 준수하며, CSS, JAVAscript 문서에서도 웹 접근성을 고려하여 코딩합니다.",
+                "현재 모션과 인터렉션은 웹에서 새로운 효과는 아니지만 사용자의 관심을 끌 수 있는 흥미롭고 확실한 방법입니다. 시각적으로 흥미롭고 사용자와 상호작용하는 사이트는 사용자를 웹사이트에 더 오래 머물게 합니다. 시각은 본능적으로 움직이는 요소에 이끌리기 때문에 특히 관심 범위가 젊은 아티스트를 찾는 젊은 타깃을 대상으로 효과적입니다."
+            ],
+            "suggestion": [
+                "01 Semantics markup",
+                "Semantics markup means using code that is consistent with the meaning to code the website. It is a great advantage of information being preferentially exposed because the search robot of Google which has 70% worldwide search engine extracts data apace and regards them as credible information.Semantic markup for the optimisation of search engine is a recommended method from Google in practice.",
+                "02 Web Accessibility",
+                "Web accessibility means that everyone, regardless of one’s disability, can access to the web. It is like the implication of art work by Eun-Me Ahn, &lt;Ahnshim Dance&gt; and &lt;Daeshim Dance&gt;, that everyone can do art. If complying with web accessibility, the screen reader which is assistive technology for vision impairment will operate properly, and people with disabiliteis can use keyboard overlays to map the site accurately. In order for us to make it possible, we need to follow the W3C standard and aim to use semantic element. Apart from the W3C web accessibility stardard, we add Aria for screen readers, comply with color and contrast accessibility for visual stability, then code our website considering the web accessibility of CSS and JAVA script documet as well.",
+                "03 Interactive Web",
+                "Dynamic website that interacts with users evokes user’s attention and keeps them stay longer. It can create sensory motion in the website interface because it uses Bezier to produce motion directly, not designing with basic element based on program. Also, any animation motions more accurately and faster than other extension because it is embodied with extension of svg."
+            ],
+            "suggestionTit": [
+                "01 Semantics markup",
+                "02 Web Accessibility",
+                "03 Interactive Web",
+            ],
+            "suggestiondd": [
+                "Semantics markup means using code that is consistent with the meaning to code the website. It is a great advantage of information being preferentially exposed because the search robot of Google which has 70% worldwide search engine extracts data apace and regards them as credible information.Semantic markup for the optimisation of search engine is a recommended method from Google in practice.",
+                "Web accessibility means that everyone, regardless of one’s disability, can access to the web. It is like the implication of art work by Eun-Me Ahn, &lt;Ahnshim Dance&gt; and &lt;Daeshim Dance&gt;, that everyone can do art. If complying with web accessibility, the screen reader which is assistive technology for vision impairment will operate properly, and people with disabiliteis can use keyboard overlays to map the site accurately. In order for us to make it possible, we need to follow the W3C standard and aim to use semantic element. Apart from the W3C web accessibility stardard, we add Aria for screen readers, comply with color and contrast accessibility for visual stability, then code our website considering the web accessibility of CSS and JAVA script documet as well.",
+                "Dynamic website that interacts with users evokes user’s attention and keeps them stay longer. It can create sensory motion in the website interface because it uses Bezier to produce motion directly, not designing with basic element based on program. Also, any animation motions more accurately and faster than other extension because it is embodied with extension of svg."
+            ],
+            "gallery": [
+                "../../img/gadja_01_main.jpg",
+                "../../img/sub/gadja_03_menu.jpg",
+                "../../img/sub/gadja_04_about.jpg",
+                "../../img/sub/gadja_05_artist_list.jpg",
+                "../../img/sub/gadja_07_artist.jpg",
+                "../../img/sub/gadja_08_production_list.jpg",
+                "../../img/sub/gadja_09_productions.jpg",
+                "../../img/sub/gadja_11_contact.jpg"
+            ],
+            "gallery_main": "../../img/gadja_01_main.jpg",
+            "gallery_menu":  "../../img/sub/gadja_03_menu.jpg",
+            "gallery_about": "../../img/sub/gadja_04_about.jpg",
+            "gallery_artist_list": "../../img/sub/gadja_05_artist_list.jpg",
+            "gallery_artist": "../../img/sub/gadja_07_artist.jpg",
+            "gallery_productions_list": "../../img/sub/gadja_08_production_list.jpg",
+            "gallery_productions": "../../img/sub/gadja_09_productions.jpg",
+            "gallery_contact": "../../img/sub/gadja_11_contact.jpg",
+
+            "galleryAlt": [
+                "gadja 프로덕션 메인 페이지 이미지 이미지",
+                "gadja 프로덕션 어바웃 페이지 이미지",
+                "gadja 프로덕션 아티스트 목록 페이지 이미지",
+                "gadja 프로덕션 아티스트 상세 페이지 이미지",
+                "gadja 프로덕션 프로덕션 목록 페이지 이미지",
+                "gadja 프로덕션 프로덕션 상세 페이지 이미지",
+                "gadja 프로덕션 컨텍트 상세 페이지 이미지"
+            ],
+            "gallery_alt_main": "gadja 프로덕션 메인 페이지 이미지",
+            "gallery_alt_menu": "gadja 프로덕션 메뉴 이미지",
+            "gallery_alt_about": "gadja 프로덕션 어바웃 페이지 이미지",
+            "gallery_alt_artist_list": "gadja 프로덕션 아티스트 목록 페이지 이미지",
+            "gallery_alt_artist": "gadja 프로덕션 아티스트 상세 페이지 이미지",
+            "gallery_alt_productions_list": "gadja 프로덕션 프로덕션 목록 페이지 이미지",
+            "gallery_alt_productions": "gadja 프로덕션 프로덕션 상세 페이지 이미지",
+            "gallery_alt_contact": "gadja 프로덕션 컨텍트 상세 페이지 이미지",
+
+            "development" : "Web accessibility means that everyone, regardless of one’s disability,  can access to the web. It is like the implication of art work by Eun-Me Ahn, &lt;Ahnshim Dance&gt; and &lt;Daeshim Dance&gt;, that everyone can do art. If complying with web accessibility, the screen reader which is assistive technology for vision impairment will operate properly, and people with disabiliteis can use keyboard overlays to map the site accurately. In order for us to make it possible, we need to follow the W3C standard and aim to use semantic element. Apart from the W3C web accessibility stardard, we add Aria for screen readers, comply with color and contrast accessibility for visual stability, then code our website considering the web accessibility of CSS and  JAVA script documet as well."
+        }
+    ],
+    "wokrsub_chung": [
+        {
+            "project": "정식품", 
+            "sitemap": [
+                "home",
+                "about",
+                "artist",
+                "product",
+                "tours",
+                "contact"
+            ],
+            "breakpoints": [
+                "1920px",
+                "1024px",
+                "768px",
+                "480px"
+            ],
+            "problemsdt": [
+                "01 메인 비주얼영역 플래시 개선",
+                "02 ",
+                "03 인터렉티브 웹",
+                ],
+            "problemsdd": [
+                "이는 검색엔진과 웹 접근성 외에도 기능 확장이 추가되었습니다. 현재 세계 70% 검색 점유율을 가진 구글 검색은 검색 로봇이 자동으로 탐색을 하는데 구조적이지 않은 마크업은 검색엔진에서 데이터 추출하기 어려워 웹 크롤링 되지 않는 문제점이 발생 할 수 있습니다. 이는 시멘틱 마크업만으로도 충분히 개선할 수 있습니다. 시멘틱 마크업 외에도 html의 rel 속성으로 검색엔진 최적화에 도움이 될 수 있습니다.",
+                "웹 접근성이란 장애와 상관없이 모든 사람이 접근할 수 있는 것을 의미합니다. 마치 아티스트 안은미의 작품 &lt;대심&gt;과 &lt;안심&gt;이 누구나 예술을 할 수 있다는 것을 보여준 것과 같습니다. 웹 접근성을 준수하면 시각장애인들이 사용하는 보조과학기술인 스크린리더기가 올바르게 동작하고, 운동장애인들이 웹을 탐색하지 위해 사용하는 키보드 오버레이로 정확하게 사이트를 탐색할 수 있습니다. 이를 위해서는 W3C표준에 따르고 의미론적 요소 사용을 지향해야 합니다. W3C 웹접근성 표준 외에도 스크린리더기를 위한 aria 속성을 추가하고, 시각적 안정을 위한 명도대비 접근성을 준수하며, CSS, JAVAscript 문서에서도 웹 접근성을 고려하여 코딩합니다.",
+                "현재 모션과 인터렉션은 웹에서 새로운 효과는 아니지만 사용자의 관심을 끌 수 있는 흥미롭고 확실한 방법입니다. 시각적으로 흥미롭고 사용자와 상호작용하는 사이트는 사용자를 웹사이트에 더 오래 머물게 합니다. 시각은 본능적으로 움직이는 요소에 이끌리기 때문에 특히 관심 범위가 젊은 아티스트를 찾는 젊은 타깃을 대상으로 효과적입니다."
+            ],
+            "suggestiondt": [
+                "01 Semantics markup",
+                "02 Web Accessibility",
+                "03 Interactive Web",
+            ],
+            "suggestiondd": [
+                "Semantics markup means using code that is consistent with the meaning to code the website. It is a great advantage of information being preferentially exposed because the search robot of Google which has 70% worldwide search engine extracts data apace and regards them as credible information.Semantic markup for the optimisation of search engine is a recommended method from Google in practice.",
+                "Web accessibility means that everyone, regardless of one’s disability, can access to the web. It is like the implication of art work by Eun-Me Ahn, &lt;Ahnshim Dance&gt; and &lt;Daeshim Dance&gt;, that everyone can do art. If complying with web accessibility, the screen reader which is assistive technology for vision impairment will operate properly, and people with disabiliteis can use keyboard overlays to map the site accurately. In order for us to make it possible, we need to follow the W3C standard and aim to use semantic element. Apart from the W3C web accessibility stardard, we add Aria for screen readers, comply with color and contrast accessibility for visual stability, then code our website considering the web accessibility of CSS and JAVA script documet as well.",
+                "Dynamic website that interacts with users evokes user’s attention and keeps them stay longer. It can create sensory motion in the website interface because it uses Bezier to produce motion directly, not designing with basic element based on program. Also, any animation motions more accurately and faster than other extension because it is embodied with extension of svg."
+            ],
+
+            "gallery": [
+                "../../img/gadja_01_main.jpg",
+                "../../img/sub/gadja_03_menu.jpg",
+                "../../img/sub/gadja_04_about.jpg",
+                "../../img/sub/gadja_05_artist_list.jpg",
+                "../../img/sub/gadja_07_artist.jpg",
+                "../../img/sub/gadja_08_production_list.jpg",
+                "../../img/sub/gadja_09_productions.jpg",
+                "../../img/sub/gadja_11_contact.jpg"
+            ],
+            "gallery_main": "../../img/gadja_01_main.jpg",
+            "gallery_menu":  "../../img/sub/gadja_03_menu.jpg",
+            "gallery_about": "../../img/sub/gadja_04_about.jpg",
+            "gallery_artist_list": "../../img/sub/gadja_05_artist_list.jpg",
+            "gallery_artist": "../../img/sub/gadja_07_artist.jpg",
+            "gallery_productions_list": "../../img/sub/gadja_08_production_list.jpg",
+            "gallery_productions": "../../img/sub/gadja_09_productions.jpg",
+            "gallery_contact": "../../img/sub/gadja_11_contact.jpg",
+
+            "galleryAlt": [
+                "gadja 프로덕션 메인 페이지 이미지 이미지",
+                "gadja 프로덕션 어바웃 페이지 이미지",
+                "gadja 프로덕션 아티스트 목록 페이지 이미지",
+                "gadja 프로덕션 아티스트 상세 페이지 이미지",
+                "gadja 프로덕션 프로덕션 목록 페이지 이미지",
+                "gadja 프로덕션 프로덕션 상세 페이지 이미지",
+                "gadja 프로덕션 컨텍트 상세 페이지 이미지"
+            ],
+            "gallery_alt_main": "gadja 프로덕션 메인 페이지 이미지",
+            "gallery_alt_menu": "gadja 프로덕션 메뉴 이미지",
+            "gallery_alt_about": "gadja 프로덕션 어바웃 페이지 이미지",
+            "gallery_alt_artist_list": "gadja 프로덕션 아티스트 목록 페이지 이미지",
+            "gallery_alt_artist": "gadja 프로덕션 아티스트 상세 페이지 이미지",
+            "gallery_alt_productions_list": "gadja 프로덕션 프로덕션 목록 페이지 이미지",
+            "gallery_alt_productions": "gadja 프로덕션 프로덕션 상세 페이지 이미지",
+            "gallery_alt_contact": "gadja 프로덕션 컨텍트 상세 페이지 이미지",
+
+            "development" : "Web accessibility means that everyone, regardless of one’s disability,  can access to the web. It is like the implication of art work by Eun-Me Ahn, &lt;Ahnshim Dance&gt; and &lt;Daeshim Dance&gt;, that everyone can do art. If complying with web accessibility, the screen reader which is assistive technology for vision impairment will operate properly, and people with disabiliteis can use keyboard overlays to map the site accurately. In order for us to make it possible, we need to follow the W3C standard and aim to use semantic element. Apart from the W3C web accessibility stardard, we add Aria for screen readers, comply with color and contrast accessibility for visual stability, then code our website considering the web accessibility of CSS and  JAVA script documet as well."
+        }
+    ]
+}

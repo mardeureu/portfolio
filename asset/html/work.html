@@ -11,10 +11,8 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/work.css">
-    <link rel="stylesheet" href="../js/work.js" >
+    <link rel="stylesheet" href="../css/swiper.css">
     <link rel="stylesheet" href="../css/responsive.css">
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <!-- js -->
@@ -49,30 +47,32 @@
     <h2>work</h2>
     <!-- swiper slide -->
     <div class="work swiper-container">
-        <div class="work_slide_count">01 / 04</div>
-        <!-- <div class="work_slide_scroll">scroll</div> -->
+        <div class="swiper-pagination"></div>
+        <div class="progressbar"><span class="loadbar"></span></div>
         <div class="swiper-wrapper">
-            <div><span></span></div>
             <div class="swiper-slide">
-                <span class="text" data-swiper-parallax="-200" data-swiper-parallax-duration="600">01</span>
-                <h5 class="title" data-swiper-parallax="-100">GADJA PRODUCTIONS</h5>
-                <div class="progressbar"><span class="loadbar"></span></div>
-                <a href="#" data-swiper-parallax="-300" class="swiper-zoom-container"><img src="../img/gadja.jpg" alt="정선희 포트폴리오 가자 웹사이트 메인 이미지"></a>
+                <h5 data-swiper-parallax="-100">GADJA productions</h5>
+                
+                <a href="sub/work_sub.html" data-swiper-parallax="-300" class="swiper-zoom-container">
+                    <img src="../img/gadja_01_main.jpg" alt="정선희 포트폴리오 가자 웹사이트 메인 이미지 클릭시 상세페이지로 이동됩니다.">
+                </a>
             </div>
             <div class="swiper-slide">
-                <span class="text" data-swiper-parallax="-200">02</span>
                 <h5 data-swiper-parallax="-100">Dr Chung's Food</h5>
-                <div class="progressbar"><span class="loadbar"></span></div>
-                <a href="#" data-swiper-parallax="-300" class="swiper-zoom-container"><img src="../img/gadjaabout.jpg" alt="정선희 포트폴리오 가자 웹사이트 메인 이미지"></a>
+                
+                <a href="#" data-swiper-parallax="-300" class="swiper-zoom-container">
+                    <img src="../img/vgm_01_main.jpg" alt="정선희 포트폴리오 정식품 웹사이트 메인 이미지 클릭시 상세페이지로 이동됩니다.">
+                </a>
             </div>
             <div class="swiper-slide">
-                <span class="text" data-swiper-parallax="-300">03</span>
-                <h5 data-swiper-parallax="-100">AhnEunMe festival</h5>
-                <div class="progressbar"><span class="loadbar"></span></div>
-                <a href="#" data-swiper-parallax="-300" class="swiper-zoom-container"><img src="../img/drjungsfood.jpg" alt="정선희 포트폴리오 가자 웹사이트 메인 이미지"></a>
+                <h5 data-swiper-parallax="-100">Ahn-EunMe festival</h5>
+                
+                <a href="#" data-swiper-parallax="-300" class="swiper-zoom-container">
+                    <img src="../img/aemfesta.jpg" alt="정선희 포트폴리오 안은미페스티벌 웹사이트 메인 이미지 클릭시 상세페이지로 이동됩니다.">
+                </a>
             </div>
-            <div class="swiper-padination"></div>
         </div>
+        
     </div>
     <!-- Swiper JS -->
         <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>

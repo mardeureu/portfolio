@@ -1,0 +1,16 @@
+{
+    "work":[
+        {
+            "title": "GADJA productions",
+            "img": "../img/gadja_01_main.jpg"
+        },
+        {
+            "title": "Dr Chung's Food",
+            "img": "../img/vgm_01_main.jpg"
+        },
+        {
+            "title": "Ahn-EunMe festival",
+            "img": "../img/aemfesta.jpg"
+        }
+    ]
+}

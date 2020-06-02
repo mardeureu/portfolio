@@ -220,12 +220,23 @@
     opacity: 0;
   }
   /* Common Styles */
-  .swiper-pagination-fraction,
   .swiper-pagination-custom,
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 10px;
     left: 0;
     width: 100%;
+  }
+  .swiper-pagination-fraction {
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #333;
+    letter-spacing: 1px;
+    font-size: 1.05em;
+    font-weight: 600;
+  }
+  .swiper-pagination-fraction span {
+    font-size: inherit;
   }
   /* Bullets */
   .swiper-pagination-bullets-dynamic {
