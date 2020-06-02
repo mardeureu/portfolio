@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded',function(){
         watchSlidesProgress: true,
         autoplay: {
             delay: 5000,
-            waitForTransition: false,
+            waitForTransition: true,
         },
         pagination: {
             el: '.swiper-pagination',
@@ -17,22 +17,22 @@ window.addEventListener('DOMContentLoaded',function(){
         },
         
     });
-
-    
-    swiper.on('slideChangeTransitionEnd', function (e) {
+    swiper.on('slideChangeTransitionEnd', function () {
         loader();        
     });
 
     function loader(){
-        var loadNum=0,load;
+        var loadNum = 1,load;
         load = setInterval(function(){
            
             $('.loadbar').css({
                 width:loadNum+'%'
             });
-            if(loadNum != 100){ loadNum++ }else{ clearInterval(load); loadNum=0};
-        },40)
-    }loader();
+            if (loadNum != 100) { loadNum++ }
+            else { clearInterval(load); loadNum = 1};
+        },50)
+    }
+    loader();
     
 //load END
 });

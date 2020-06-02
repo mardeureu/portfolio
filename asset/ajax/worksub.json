@@ -62,7 +62,6 @@
             "gallery_productions_list": "../../img/sub/gadja_08_production_list.jpg",
             "gallery_productions": "../../img/sub/gadja_09_productions.jpg",
             "gallery_contact": "../../img/sub/gadja_11_contact.jpg",
-
             "galleryAlt": [
                 "gadja 프로덕션 메인 페이지 이미지 이미지",
                 "gadja 프로덕션 어바웃 페이지 이미지",
@@ -88,12 +87,27 @@
         {
             "project": "정식품", 
             "sitemap": [
-                "home",
-                "about",
-                "artist",
-                "product",
-                "tours",
-                "contact"
+                "기업소개",
+                "제품소개",
+                "공정거래",
+                "고객지원",
+                "회원전용"
+            ],
+            "submenu": [
+                "CEO인사말",
+                "기업정보",
+                "사회공헌",
+                "중앙연구소",
+                "식품안전인증현황",
+                "베지밀",
+                "베지밀 블랙",
+                "그 외 제품",
+                "공정거래 도입",
+                "공정거래 프로그램",
+                "FAQ",
+                "1:1문의",
+                "로그인",
+                "회원가입"
             ],
             "breakpoints": [
                 "1920px",
@@ -102,64 +116,64 @@
                 "480px"
             ],
             "problemsdt": [
-                "01 메인 비주얼영역 플래시 개선",
-                "02 ",
-                "03 인터렉티브 웹",
-                ],
+                "01 플래시사용으로 인한 호환 문제",
+                "02 문서형식 xhtml으로 시멘틱 요소 사용의 문제",
+                "03 UI/UX 개선 필요성의 문제"
+            ],
             "problemsdd": [
-                "이는 검색엔진과 웹 접근성 외에도 기능 확장이 추가되었습니다. 현재 세계 70% 검색 점유율을 가진 구글 검색은 검색 로봇이 자동으로 탐색을 하는데 구조적이지 않은 마크업은 검색엔진에서 데이터 추출하기 어려워 웹 크롤링 되지 않는 문제점이 발생 할 수 있습니다. 이는 시멘틱 마크업만으로도 충분히 개선할 수 있습니다. 시멘틱 마크업 외에도 html의 rel 속성으로 검색엔진 최적화에 도움이 될 수 있습니다.",
-                "웹 접근성이란 장애와 상관없이 모든 사람이 접근할 수 있는 것을 의미합니다. 마치 아티스트 안은미의 작품 &lt;대심&gt;과 &lt;안심&gt;이 누구나 예술을 할 수 있다는 것을 보여준 것과 같습니다. 웹 접근성을 준수하면 시각장애인들이 사용하는 보조과학기술인 스크린리더기가 올바르게 동작하고, 운동장애인들이 웹을 탐색하지 위해 사용하는 키보드 오버레이로 정확하게 사이트를 탐색할 수 있습니다. 이를 위해서는 W3C표준에 따르고 의미론적 요소 사용을 지향해야 합니다. W3C 웹접근성 표준 외에도 스크린리더기를 위한 aria 속성을 추가하고, 시각적 안정을 위한 명도대비 접근성을 준수하며, CSS, JAVAscript 문서에서도 웹 접근성을 고려하여 코딩합니다.",
-                "현재 모션과 인터렉션은 웹에서 새로운 효과는 아니지만 사용자의 관심을 끌 수 있는 흥미롭고 확실한 방법입니다. 시각적으로 흥미롭고 사용자와 상호작용하는 사이트는 사용자를 웹사이트에 더 오래 머물게 합니다. 시각은 본능적으로 움직이는 요소에 이끌리기 때문에 특히 관심 범위가 젊은 아티스트를 찾는 젊은 타깃을 대상으로 효과적입니다."
-            ],
-            "suggestiondt": [
-                "01 Semantics markup",
-                "02 Web Accessibility",
-                "03 Interactive Web",
-            ],
-            "suggestiondd": [
                 "Semantics markup means using code that is consistent with the meaning to code the website. It is a great advantage of information being preferentially exposed because the search robot of Google which has 70% worldwide search engine extracts data apace and regards them as credible information.Semantic markup for the optimisation of search engine is a recommended method from Google in practice.",
                 "Web accessibility means that everyone, regardless of one’s disability, can access to the web. It is like the implication of art work by Eun-Me Ahn, &lt;Ahnshim Dance&gt; and &lt;Daeshim Dance&gt;, that everyone can do art. If complying with web accessibility, the screen reader which is assistive technology for vision impairment will operate properly, and people with disabiliteis can use keyboard overlays to map the site accurately. In order for us to make it possible, we need to follow the W3C standard and aim to use semantic element. Apart from the W3C web accessibility stardard, we add Aria for screen readers, comply with color and contrast accessibility for visual stability, then code our website considering the web accessibility of CSS and JAVA script documet as well.",
                 "Dynamic website that interacts with users evokes user’s attention and keeps them stay longer. It can create sensory motion in the website interface because it uses Bezier to produce motion directly, not designing with basic element based on program. Also, any animation motions more accurately and faster than other extension because it is embodied with extension of svg."
             ],
-
-            "gallery": [
-                "../../img/gadja_01_main.jpg",
-                "../../img/sub/gadja_03_menu.jpg",
-                "../../img/sub/gadja_04_about.jpg",
-                "../../img/sub/gadja_05_artist_list.jpg",
-                "../../img/sub/gadja_07_artist.jpg",
-                "../../img/sub/gadja_08_production_list.jpg",
-                "../../img/sub/gadja_09_productions.jpg",
-                "../../img/sub/gadja_11_contact.jpg"
+            "suggestiondt": [
+                "01 메인 비주얼 html5 요소 대체",
+                "02 html5 dtd",
+                "03 UI/UX 개선"
             ],
-            "gallery_main": "../../img/gadja_01_main.jpg",
-            "gallery_menu":  "../../img/sub/gadja_03_menu.jpg",
-            "gallery_about": "../../img/sub/gadja_04_about.jpg",
-            "gallery_artist_list": "../../img/sub/gadja_05_artist_list.jpg",
-            "gallery_artist": "../../img/sub/gadja_07_artist.jpg",
-            "gallery_productions_list": "../../img/sub/gadja_08_production_list.jpg",
-            "gallery_productions": "../../img/sub/gadja_09_productions.jpg",
-            "gallery_contact": "../../img/sub/gadja_11_contact.jpg",
+            "suggestiondd": [
+                "많은 브라우저에서 더 이상 플래시를 지원하지 않아 메인 비주얼을 플래시로 처리하는것을 적절하지 않습니다 또한, 스마트폰을 사용하여 웹사이트를 방문하는 잠재고객이 늘고 있습니다. 이러한 휴대전화에서는 플래시를 재생하거나 복잡한 양방향 그래픽을 제대로 표시하지 못합니다. 휴대전화로 사이트를 방문하는 잠재고객을 놓치지 않으려면 전체 웹사이트를 둘러보는 것은 아니더라도 최소한 중요한 정보는 확인할 수 있도록 해야 합니다. ",
+                "html 표준의 가장 새로운 버전으로 HTML5를 통해 리치 미디어의 기술 지원 뿐만이 아니라, 사용자 및 로컬 데이터를 웹 서버 사이에 보다 간편하면서도 효과적으로 교환할 수 있는 웹 애플리케이션을 개발하기 위한 확장 기술 지원를 제공하는 새로운 기능도 제공됩니다. 뿐만아니라 html5에서 시멘틱 요소는 검색엔진최적화와 웹접근성에도 도움이 됩니다.",
+                "사용자에게 익숙하지 않거나 오래된 UI/UX는 혼란스러울 수 있습니다. 불필요한 정보 없이 웹사이트를 최대한 간결하고 알기 쉽게 만들어야 합니다. 링크와 이미지, 텍스트가 너무 많으면 잠재고객에게 혼란만 가중시킬 수 있습니다. 잘 정리되어 있는 깔끔한 웹사이트를 제공해야 사용자가 편안하게 웹사이트에 머무를 수 있고 사용자의 반응을 유도할 수 있습니다."
+            ],
+            "gallery": [
+                "../../img/vgm_01_main.jpg",
+                "../../img/sub/vgm_02_sub.jpg",
+                "../../img/sub/vgm_05_sub.jpg",
+                "../../img/sub/vgm_06_sub.jpg",
+                "../../img/sub/vgm_07_sub.jpg",
+                "../../img/sub/vgm_08_sub.jpg",
+                "../../img/sub/vgm_09_sub.jpg",
+                "../../img/sub/vgm_10_sub.jpg"
+            ],
+            "gallery_main": "../../img/vgm_01_main.jpg",
+            "gallery_prod":  "../../img/sub/vgm_02_sub.jpg",
+            "gallery_cp": "../../img/sub/vgm_05_sub.jpg",
+            "gallery_cpprogram": "../../img/sub/vgm_06_sub.jpg",
+            "gallery_faq": "../../img/sub/vgm_07_sub.jpg",
+            "gallery_cs": "../../img/sub/vgm_08_sub.jpg",
+            "gallery_login": "../../img/sub/vgm_09_sub.jpg",
+            "gallery_join": "../../img/sub/vgm_10_sub.jpg",
 
             "galleryAlt": [
-                "gadja 프로덕션 메인 페이지 이미지 이미지",
-                "gadja 프로덕션 어바웃 페이지 이미지",
-                "gadja 프로덕션 아티스트 목록 페이지 이미지",
-                "gadja 프로덕션 아티스트 상세 페이지 이미지",
-                "gadja 프로덕션 프로덕션 목록 페이지 이미지",
-                "gadja 프로덕션 프로덕션 상세 페이지 이미지",
-                "gadja 프로덕션 컨텍트 상세 페이지 이미지"
+                "정식품 메인 페이지 이미지 이미지",
+                "정식품 제품 리스트 페이지 이미지",
+                "정식품 공정거래 도입 페이지 이미지",
+                "정식품 공정거래 프로그램 페이지 이미지",
+                "정식품 FAQ 페이지 이미지",
+                "정식품 1:1 페이지 이미지",
+                "정식품 로그인 페이지 이미지",
+                "정식품 회원가입 페이지 이미지"
             ],
-            "gallery_alt_main": "gadja 프로덕션 메인 페이지 이미지",
-            "gallery_alt_menu": "gadja 프로덕션 메뉴 이미지",
-            "gallery_alt_about": "gadja 프로덕션 어바웃 페이지 이미지",
-            "gallery_alt_artist_list": "gadja 프로덕션 아티스트 목록 페이지 이미지",
-            "gallery_alt_artist": "gadja 프로덕션 아티스트 상세 페이지 이미지",
-            "gallery_alt_productions_list": "gadja 프로덕션 프로덕션 목록 페이지 이미지",
-            "gallery_alt_productions": "gadja 프로덕션 프로덕션 상세 페이지 이미지",
-            "gallery_alt_contact": "gadja 프로덕션 컨텍트 상세 페이지 이미지",
+            "gallery_alt_main": "정식품 메인 페이지 이미지 이미지",
+            "gallery_alt_prod": "정식품 제품 리스트 페이지 이미지",
+            "gallery_alt_cp": "정식품 공정거래 도입 페이지 이미지",
+            "gallery_alt_cpprogram": "정식품 공정거래 프로그램 페이지 이미지",
+            "gallery_alt_faq": "정식품 FAQ 페이지 이미지",
+            "gallery_alt_cs": "정식품 1:1 페이지 이미지",
+            "gallery_alt_login": "정식품 로그인 페이지 이미지",
+            "gallery_alt_join": "정식품 회원가입 페이지 이미지",
 
-            "development" : "Web accessibility means that everyone, regardless of one’s disability,  can access to the web. It is like the implication of art work by Eun-Me Ahn, &lt;Ahnshim Dance&gt; and &lt;Daeshim Dance&gt;, that everyone can do art. If complying with web accessibility, the screen reader which is assistive technology for vision impairment will operate properly, and people with disabiliteis can use keyboard overlays to map the site accurately. In order for us to make it possible, we need to follow the W3C standard and aim to use semantic element. Apart from the W3C web accessibility stardard, we add Aria for screen readers, comply with color and contrast accessibility for visual stability, then code our website considering the web accessibility of CSS and  JAVA script documet as well."
+            "development" : "Web accessibility means that everyone, regardless of one’s disability, can access to the web. It is like the implication of art work by Eun-Me Ahn, &lt;Ahnshim Dance&gt; and &lt;Daeshim Dance&gt;, that everyone can do art. If complying with web accessibility, the screen reader which is assistive technology for vision impairment will operate properly, and people with disabiliteis can use keyboard overlays to map the site accurately. In order for us to make it possible, we need to follow the W3C standard and aim to use semantic element. Apart from the W3C web accessibility stardard, we add Aria for screen readers, comply with color and contrast accessibility for visual stability, then code our website considering the web accessibility of CSS and  JAVA script documet as well."
         }
     ]
 }

@@ -90,8 +90,6 @@ header .header-wrap nav ul li:hover a::after {
                 -10px -15px 10px -5px #aeaec0,
                 10px 0px 10px -5px #fff;
 }
-
-
 /* heading */
 h2 {
     width: 80%;
@@ -105,13 +103,6 @@ h2 {
     font-style: italic;
     letter-spacing: 2px;
 }
-/*
-    position: relative;
-    top: 0;
-    right: 0;
-    animation: tit-animation 1s;
-    overflow: hidden;
-*/
 @keyframes tit-animation {
     0% {
         right: -100%;
