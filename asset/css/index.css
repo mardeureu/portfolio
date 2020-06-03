@@ -1,19 +1,29 @@
+header .header-wrap > a::before {
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+header .header-wrap > a:hover::before,
+header .header-wrap > a.active::before  {
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+}
+header .header-wrap nav ul li a {
+    color: #ededed;
+}
 body {
     height: 100vh;
     overflow: hidden;
 }
 main {
     display: block;
-    position: relative;
-    top: 20%;
-    left: 0;
-    z-index: 0;
     width: 100%;
-    height: 43vh;
+    height: ;
     background-color: transparent;
-    perspective: 900px;
 }
 main .circleshadow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     border-radius: 50%;
     width: 20vw;
     height: 20vw;
@@ -65,5 +75,282 @@ main .circleshadow {
                     4px 4px 6px -9px #BCF314,
                     -4px -4px 10px -8px #D7D7D9;
         transform: rotateZ(360deg);
+    }
+}
+/* text */
+h2 {
+    width: 0;
+    position: static;
+    margin: 0;
+    font-family: 'Montserrat', 'NanumSquare', '나눔스퀘어', 'Arial', 'Malgun Gothic', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: normal;
+}
+.txt {
+    width: 100%;
+    color: #fff;
+    font-size: 2em;
+    letter-spacing: 2px;
+    position: absolute;
+}
+.txt h1 {
+    width: 100%;
+    /* font-size: 12vw; */
+    font-size: 10vw;
+    text-align: center;
+    font-style: italic;
+}
+.txt h2 {
+    width: 100%;
+    /* font-size: 3vw; */
+    font-size: 2.5vw;
+    text-align: center;
+    font-weight: 400;
+}
+.txt h2::before {
+    content: '( ';
+}
+.txt h2::after {
+    content: ' )';
+}
+.txt h2 span {
+    font-size: inherit;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Open Sans', sans-serif;
+}
+.txt h2 span::after {
+    content: '';
+    display: inline-block;
+    width: 5vw;
+    height: 1px;
+    background-color: #fff;
+    margin: 0 10px 0 10px;
+}
+.txt .bottom-txt {
+    width: 90%;
+    margin: 10vh auto 0;
+    text-align: right;
+}
+.txt .bottom-txt::before {
+    content: '';
+    display: block;
+    width: 100%;
+    border-top: 1px solid #fff;
+    margin-bottom: 10px;
+}
+.txt .bottom-txt dl {
+    width: 100%;
+    line-height: 1.25em;
+    font-size: 1em;
+}
+.txt .bottom-txt dl dt::after {
+    content: '';
+    display: block;
+    padding-bottom: 5px;
+    width: 4em;
+    border-bottom: 1px #fff;
+}
+.txt .bottom-txt dl dt {
+    font-size: inherit;
+    text-align: left;
+}
+.txt .bottom-txt dl dt a {
+    font-size: inherit;
+}
+.txt .bottom-txt dl dd {
+    font-size: inherit;
+    text-align: right;
+}
+.txt .bottom-txt dl dd a {
+    font-size: inherit;
+}
+
+/* background */
+.bg {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.bg-1 {
+    background-color: #2D2D2D;
+    height: 20vh;
+    width: 100%;
+    /* animation: widthzero 2s alternate both; */
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: -1;
+}
+.bg-2 {
+    background-color: #2D2D2D;
+    width: 100%;
+    height: 20vh;
+    /* animation: widthzero 2s 1s alternate both; */
+    position: fixed;
+    top: 20%;
+    right: -100%;
+    z-index: -1;
+}
+.bg-3 {
+    background-color: #2D2D2D;
+    height: 20vh;
+    width: 100%;
+    /* animation: widthzero 2s 2s alternate both; */
+    position: fixed;
+    top: 40%;
+    right: -100%;
+    z-index: -1;
+}
+.bg-4 {
+    background-color: #2D2D2D;
+    height: 20vh;
+    width: 100%;
+    /* animation: widthzero 2s 3.2s alternate both; */
+    position: fixed;
+    top: 60%;
+    right: -100%;
+    z-index: -1;
+}
+.bg-5 {
+    background-color: #2D2D2D;
+    height: 20vh;
+    width: 100%;
+    /* animation: widthzero 2s 3.5s alternate both; */
+    position: fixed;
+    bottom: 0;
+    right: -100%;
+    z-index: -1;
+}
+@keyframes widthzero {
+    0%{
+        right: 100%;
+    }
+    100%{
+        right: 0%;
+    }
+}
+/* motion */
+.motion {
+    perspective: 900px;
+    position: relative;
+}
+.motion .one {
+    width: 40vh;
+    height: 40vh;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    z-index: 3;
+    transform: translateX(0) translateZ(0) rotateZ(0) rotateX(0deg);
+    animation: onemotion 3s infinite both alternate;
+}
+@keyframes onemotion {
+    0% {
+        border: 1px solid #BCF314;
+        transform: translateX(0) translateZ(200px) rotateZ(0deg) rotateX(10deg) rotateY(20deg) scale3d(1, 1, 1);
+    }
+    50% {
+        border: 1px solid #333;
+    }
+    100% {
+        border: 1px solid #fff;
+        transform: translateX(300px) translateZ(300px) rotateZ(280deg) rotateX(160deg) rotateY(120deg) scale3d(1.8, 1.8, 1);
+    }
+}
+.motion .one:nth-last-of-type(1) {
+    width: 40vh;
+    height: 40vh;
+}
+.motion .one:nth-last-of-type(2) {
+    width: 38vh;
+    height: 38vh;
+}
+.motion .one:nth-last-of-type(3) {
+    width: 36vh;
+    height: 36vh;
+}
+.motion .one:nth-last-of-type(4) {
+    width: 34vh;
+    height: 34vh;
+}
+.motion .one:nth-last-of-type(5) {
+    width: 32vh;
+    height: 32vh;
+}
+.motion .one:nth-last-of-type(6) {
+    width: 30vh;
+    height: 30vh;
+}
+.motion .one:nth-last-of-type(7) {
+    width: 28vh;
+    height: 28vh;
+}
+.motion .one:nth-last-of-type(8) {
+    width: 26vh;
+    height: 26vh;
+}
+.motion .one:nth-last-of-type(9) {
+    width: 24vh;
+    height: 24vh;
+}
+.motion .one:nth-last-of-type(10) {
+    width: 22vh;
+    height: 22vh;
+}
+.motion .one:nth-last-of-type(11) {
+    width: 20vh;
+    height: 20vh;
+}
+.motion .one:nth-last-of-type(12) {
+    width: 18vh;
+    height: 18vh;
+}
+.motion .one:nth-last-of-type(13) {
+    width: 16vh;
+    height: 16vh;
+}
+.motion .one:nth-last-of-type(14) {
+    width: 14vh;
+    height: 14vh;
+}
+.motion .one:nth-last-of-type(15) {
+    width: 12vh;
+    height: 12vh;
+}
+.motion .one:nth-last-of-type(16) {
+    width: 10vh;
+    height: 10vh;
+}
+.motion .one:nth-last-of-type(17) {
+    width: 8vh;
+    height: 8vh;
+}
+.motion .one:nth-last-of-type(18) {
+    width: 6vh;
+    height: 6vh;
+}
+.motion .one:nth-last-of-type(19) {
+    width: 4vh;
+    height: 4vh;
+}
+.motion .one:nth-last-of-type(20) {
+    width: 2vh;
+    height: 2vh;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    100% {
+        transform: scale3d(1.5, 1.5, 1);
     }
 }

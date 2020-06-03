@@ -1,5 +1,5 @@
-/*
-window.addEventListener('onload',function(){
+
+window.addEventListener('DOMContentLoaded',function(){
     function move() {
         var i = 0;
         if (i == 0) {
@@ -19,13 +19,21 @@ window.addEventListener('onload',function(){
            }
         }
     }
-    move();
-    //cursor pointer event
-    $('')
+    var mX, mY;
+    $('.work').on({
+        mouseenter:function(e){
+            $('.m_click').stop().fadeIn();
+        },
+        mousemove:function(e){
+            mX = e.pageX;
+            mY = e.pageY;
+            $('.m_click').css({
+                left: mX,
+                top: mY,
+            })
+        },
+        mouseleave:function(e){
+            $('.m_click').stop().fadeOut();
+        }
+    })
 });
-*/
-// $(document).ready(function(){
-//     $("img[]")
-//     $('.loadbar').set
-// });
-// //슬라이드가 넘어가면 settimeout 3000
