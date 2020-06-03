@@ -256,35 +256,30 @@ h4 {
 .gallery {
     width: 100%;
     margin-bottom: 50px;
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2px; */
+    display: grid;
+    grid-template-columns: fit-content(2ft) fit-content(2ft) fit-content(2ft);
+    grid-row-end: 3;
+    gap: 2px;
 }
-.gallery::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-.gallery figcaption {
+.gallery-name {
     width: 100%;
     margin: 0 auto;
+    font-size: 1.25em;
+    font-weight: 700;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 1.07rem;
-    font-weight: 700;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     background-color: rgba(255, 255, 255, .6);
 }
 .gallery img {
-    width: calc(50% - 2px);
-    margin-bottom: 2px;
+    
 }
 .gallery img:nth-last-of-type(even) {
-    float: right;
+     
 }
 .gallery img:nth-last-of-type(odd) {
     
@@ -356,5 +351,31 @@ h4.work_sub::before {
     vertical-align: -.12em;
     font-weight: 700;
 }
-
-
+.link {
+    text-align: center;
+    margin-top: 50px;
+}
+.portfoliolink {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 2%;
+    margin-left: -1%;
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: .5s;
+    box-shadow: inset -10px -10px 6px -6px rgba(174, 174, 192, .4),
+                inset 10px 10px 5px -10px rgba(255, 255, 255, .5),
+                -10px -8px 10px -5px rgba(174, 174, 192, .25),
+                10px 0px 10px -5px rgba(255, 255, 255, .8);
+}
+.portfoliolink:hover {
+    color: #2d2d2d;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, .9);
+    box-shadow: inset -10px -10px 6px -6px rgba(174, 174, 192, .4),
+                inset 10px 10px 5px -10px rgba(255, 255, 255, .5),
+                -10px -8px 10px -5px rgba(174, 174, 192, .25),
+                10px 0px 10px -5px rgba(255, 255, 255, .8);
+}

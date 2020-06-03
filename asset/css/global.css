@@ -49,7 +49,8 @@ header .header-wrap > a::before {
     border-right: 1px solid transparent;
     transition: all .6s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
-header .header-wrap > a:hover::before {
+header .header-wrap > a:hover::before,
+header .header-wrap > a.active::before  {
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
     border-left: 1px solid #2D2D2D;
