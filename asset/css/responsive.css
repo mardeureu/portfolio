@@ -165,8 +165,7 @@
         }
     }
     .gallery {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 2px;
+        display: block;
     }
     .work_sub {
         padding-top: 40px;
