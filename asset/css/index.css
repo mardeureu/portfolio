@@ -2,7 +2,6 @@ header .header-wrap > a::before {
     border-top: 1px solid #ededed;
     border-bottom: 1px solid #ededed;
 }
-
 header .header-wrap nav ul li {
     transition: all .6s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
