@@ -349,11 +349,16 @@ h4.work_sub::before {
     font-weight: 700;
 }
 .portfoliolink {
+    width: 90%;
+    margin: 50px auto;
+    text-align: right;
     position: -webkit-sticky;
     position: sticky;
-    bottom: 2vh;
-    margin-left: 5%;
-    margin-top: 50px;
+    bottom: 1vh;
+}
+.portfoliolink a {
+    font-size: .9em;
+    width: 150px;
     text-align: center;
     background-color: rgba(255, 255, 255, .2);
     padding: 10px 20px;
@@ -364,7 +369,7 @@ h4.work_sub::before {
                 -10px -8px 10px -5px rgba(174, 174, 192, .25),
                 10px 0px 10px -5px rgba(255, 255, 255, .8);
 }
-.portfoliolink:hover {
+.portfoliolink a:hover {
     color: #2d2d2d;
     border-radius: 40px;
     background-color: rgba(255, 255, 255, .9);
