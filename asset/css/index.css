@@ -289,7 +289,7 @@ h2 {
     }
     100% {
         border: 1px solid #333;
-        transform: translateX(300px) translateZ(300px) rotateZ(280deg) rotateX(160deg) rotateY(120deg) scale3d(1.8, 1.8, 1);
+        transform: translateX(500px) translateZ(300px) rotateZ(280deg) rotateX(160deg) rotateY(120deg) scale3d(1.8, 1.8, 1);
     }
 }
 .motion .one:nth-last-of-type(1) {
