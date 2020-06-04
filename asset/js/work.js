@@ -39,6 +39,5 @@ window.addEventListener('DOMContentLoaded',function(){
     });
     $(':not(.work)').on('mouseenter',function(){
         $('.m_click').stop().fadeOut();
-        console.log('a');
     });
 });
