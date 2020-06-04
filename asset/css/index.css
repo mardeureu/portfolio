@@ -2,13 +2,7 @@ header .header-wrap > a::before {
     border-top: 1px solid #ededed;
     border-bottom: 1px solid #ededed;
 }
-header .header-wrap > a:hover::before,
-header .header-wrap > a.active::before  {
-    border-top: 1px solid transparent;
-    border-bottom: 1px solid transparent;
-    border-left: 1px solid #ededed;
-    border-right: 1px solid #ededed;
-}
+
 header .header-wrap nav ul li {
     transition: all .6s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
@@ -19,6 +13,7 @@ header .header-wrap nav ul li a {
     color: #ededed;
 }
 body {
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
