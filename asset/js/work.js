@@ -19,21 +19,26 @@ window.addEventListener('DOMContentLoaded',function(){
            }
         }
     }
+
+    $('.m_click').stop().fadeOut();
     var mX, mY;
+    var bln = true;
     $('.work').on({
         mouseenter:function(e){
             $('.m_click').stop().fadeIn();
         },
         mousemove:function(e){
             mX = e.pageX;
-            mY = e.pageY;
+            mY = e.pageY;   
             $('.m_click').css({
                 left: mX,
                 top: mY,
-            })
+            });
         },
-        mouseleave:function(e){
-            $('.m_click').stop().fadeOut();
-        }
-    })
+
+    });
+    $(':not(.work)').on('mouseenter',function(){
+        $('.m_click').stop().fadeOut();
+        console.log('a');
+    });
 });

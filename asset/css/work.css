@@ -33,7 +33,6 @@ header .header-wrap nav ul li:hover a::before {
     position: relative;
     top: -40px;
     z-index: -1;
-
 }
 .swiper-pagination {
     padding-left: 100px;
@@ -130,6 +129,7 @@ header .header-wrap nav ul li:hover a::before {
     top: 0;
     left: 0;
     z-index:9999;
+    /* transform: translate(-50%,-50%); */
     cursor: none;
 }
 /* swiper */

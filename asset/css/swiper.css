@@ -451,6 +451,8 @@
     display: none;
   }
   .swiper-zoom-container {
+    cursor: none;
+
     width: 100%;
     height: 100%;
     display: -webkit-box;
