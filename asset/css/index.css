@@ -4,8 +4,16 @@ header .header-wrap > a::before {
 }
 header .header-wrap > a:hover::before,
 header .header-wrap > a.active::before  {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
     border-left: 1px solid #ededed;
     border-right: 1px solid #ededed;
+}
+header .header-wrap nav ul li {
+    transition: all .6s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+header .header-wrap nav ul li:hover a {
+    color: #BCF314;
 }
 header .header-wrap nav ul li a {
     color: #ededed;
@@ -17,7 +25,6 @@ body {
 main {
     display: block;
     width: 100%;
-    height: ;
     background-color: transparent;
 }
 main .circleshadow {
@@ -89,14 +96,17 @@ h2 {
 }
 .txt {
     width: 100%;
+    margin: 0 auto;
     color: #fff;
     font-size: 2em;
     letter-spacing: 2px;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 .txt h1 {
     width: 100%;
-    /* font-size: 12vw; */
     font-size: 10vw;
     text-align: center;
     font-style: italic;
@@ -107,6 +117,7 @@ h2 {
     font-size: 2.5vw;
     text-align: center;
     font-weight: 400;
+    line-height: 3em;
 }
 .txt h2::before {
     content: '( ';
@@ -130,43 +141,58 @@ h2 {
 }
 .txt .bottom-txt {
     width: 90%;
-    margin: 10vh auto 0;
+    margin: 8vh auto 0;
     text-align: right;
 }
 .txt .bottom-txt::before {
     content: '';
-    display: block;
     width: 100%;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #ccc;
     margin-bottom: 10px;
 }
 .txt .bottom-txt dl {
     width: 100%;
     line-height: 1.25em;
     font-size: 1em;
+    color: #ccc;
+}
+.txt .bottom-txt dl::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.txt .bottom-txt dl dt {
+    font-size: inherit;
+    text-align: right;
 }
 .txt .bottom-txt dl dt::after {
     content: '';
     display: block;
-    padding-bottom: 5px;
-    width: 4em;
-    border-bottom: 1px #fff;
-}
-.txt .bottom-txt dl dt {
-    font-size: inherit;
-    text-align: left;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    padding-bottom: 10px;
 }
 .txt .bottom-txt dl dt a {
     font-size: inherit;
+    padding-bottom: 10px;
+    font-weight: 600;
+    transition: all .5s;
+}
+.txt .bottom-txt dl dt:hover a {
+    font-style: italic;
+    color: #BCF314; 
 }
 .txt .bottom-txt dl dd {
     font-size: inherit;
-    text-align: right;
+    line-height: 1.25em;
 }
 .txt .bottom-txt dl dd a {
     font-size: inherit;
+    transition: all .5s;
 }
-
+.txt .bottom-txt dl dd:hover a {
+    color: #BCF314; 
+}
 /* background */
 .bg {
     width: 100%;
@@ -175,7 +201,7 @@ h2 {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: -2;
 }
 .bg-1 {
     background-color: #2D2D2D;
@@ -237,31 +263,31 @@ h2 {
 }
 /* motion */
 .motion {
-    perspective: 900px;
+    perspective: 1000px;
     position: relative;
 }
 .motion .one {
     width: 40vh;
     height: 40vh;
     border: 1px solid #fff;
-    border-radius: 50%;
     position: absolute;
     top: 0;
     left: 10%;
     z-index: 3;
     transform: translateX(0) translateZ(0) rotateZ(0) rotateX(0deg);
-    animation: onemotion 3s infinite both alternate;
+    animation: onemotion 3.5s .7s infinite both alternate;
 }
 @keyframes onemotion {
     0% {
-        border: 1px solid #BCF314;
+        border-radius: 50%;
+        border: 1px solid #666;
         transform: translateX(0) translateZ(200px) rotateZ(0deg) rotateX(10deg) rotateY(20deg) scale3d(1, 1, 1);
     }
     50% {
-        border: 1px solid #333;
+        background-color: rgba(255, 255, 255, .1);
     }
     100% {
-        border: 1px solid #fff;
+        border: 1px solid #333;
         transform: translateX(300px) translateZ(300px) rotateZ(280deg) rotateX(160deg) rotateY(120deg) scale3d(1.8, 1.8, 1);
     }
 }

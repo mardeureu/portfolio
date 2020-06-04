@@ -19,6 +19,14 @@ h2 {
         color: rgba(45, 45, 45, 1)
     }
 }
+header .header-wrap nav ul li a::before {
+    border-left: 1px solid #2D2D2D;
+    border-right: 1px solid #2D2D2D;
+}
+header .header-wrap nav ul li:hover a::before {
+    border-top: 1px solid #2D2D2D;
+    border-bottom: 1px solid #2D2D2D;
+}
 /* work */
 .work {
     text-align: right;
