@@ -28,7 +28,8 @@ window.addEventListener('DOMContentLoaded', function(){
                     pofolmain = "<img src='"+selector.gallery[0]+"' alt='"+selector.galleryalt[0]+"'>";
                     problems = dataLoop(selector.problemsdt,selector.problemsdd,2);
                     suggestion = dataLoop(selector.suggestiondt,selector.suggestiondd,2);
-                    development =  selector.development;
+                    //development =  selector.development;
+                    development =  dataLoop(selector.development,0,1);
                     link = selector.link;
 
                     gallery = function(){
@@ -38,7 +39,6 @@ window.addEventListener('DOMContentLoaded', function(){
                         }
                         return getData;
                     };
-
                     $('h3').html(title);
                     $('.project').html(project);
                     $('.sitemap').html(sitemap);

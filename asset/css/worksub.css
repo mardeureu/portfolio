@@ -38,24 +38,30 @@ h3::before {
 .work_sub {
     width: 90%;
     margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 80px;
 }
 h4 {
     font-size: 1.25em;
     font-weight: 700;
-    padding-bottom: 20px;
+    line-height: 3em;;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, .7);
 }
-.work_sub p {
+p {
     line-height: 1.5em;
     margin-bottom: 100px;
 }
-.work_sub .sitemap {
-    width: 100%;
+.sitemap {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 100px;
 }
-.work_sub .sitemap li {
+.sitemap li {
     width: 100%;
     position: relative;
     color: #ededed;
@@ -65,18 +71,17 @@ h4 {
     background-color: #2d2d2d;
     margin-right: .5%;
     font-size: 1.05em;
+    z-index: -1;
 }
-.work_sub .sitemap li:last-child {
+.sitemap li:last-child {
     margin-right: 0;
 }
-.work_sub .breakpoints {
-    width: 100%;
+.breakpoints {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 100px;
 }
-.work_sub .breakpoints li {
+.breakpoints li {
     position: relative;
     color: #2d2d2d;
     text-align: center;
@@ -85,8 +90,9 @@ h4 {
     border: 1px solid #2d2d2d;
     margin-right: 1%;
     font-size: 1.05em;
+    z-index: -1;
 }
-.work_sub .breakpoints li:last-child {
+.breakpoints li:last-child {
     margin-right: 0;
 }
 
@@ -117,12 +123,15 @@ h4 {
 }
 .problems,
 .suggestion {
-    padding: 50px;
+    padding: 20px 50px 50px 50px;
     font-family: inherit;
     /* min-height: 130vh; */
 }
 .problems h4,
-.suggestion h4 {}
+.suggestion h4 {
+    padding-left: 0;
+    padding-right: 0;
+}
 .problems dl,
 .suggestion dl {}
 .problems dt,
@@ -135,7 +144,9 @@ h4 {
     color: #2d2d2d;
     position: relative;
 }
-.problems h4 {}
+.problems h4 {
+    background-color: rgba(237, 237, 237, .7);
+}
 .problems dl {}
 .problems dt {}
 .problems dd {}
@@ -144,7 +155,9 @@ h4 {
     background-color: #2d2d2d;
     color: #ededed;
 }
-.suggestion h4 {}
+.suggestion h4 {
+    background-color: rgba(45, 45, 45, .7);
+}
 .suggestion dl {}
 .suggestion dt {}
 .suggestion dd {}
@@ -253,52 +266,63 @@ h4 {
 .prodinfo section dl dd {
     line-height: 2em;
 }
-.gallery {
+.gallerywrap {
+    display: flex;
+}
+figure.gallery {
     width: 100%;
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2px;
-    
-}
-.gallery-name {
-    width: 100%;
-    margin: 0 auto;
-    font-size: 1.25em;
-    font-weight: 700;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: rgba(255, 255, 255, .6);
 }
 .gallery img {
     width: 100%;
 }
-.gallery img:nth-last-of-type(even) {
-     
+.gallery img:nth-of-type(odd) {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
-.gallery img:nth-last-of-type(odd) {
-    
-}
-h4.work_sub::before {
+.gallery + section:nth-of-type(4) {}
+.gallery + section:nth-of-type(4)::before {
     content: '';
     display: block;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     height: 1px;
     background-color: #2d2d2d;
-    margin-bottom: 30px;
+}
+.gallery + section:nth-of-type(4)::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.gallery + section:nth-of-type(4) h4 {}
+.deco {
+    width: calc(50% - .1px);
+    background-color: #000;
+    position: relative;
 }
 .development {
-    line-height: 1.5em;
-    padding-bottom: 20px;
+    width: 90%;
+    margin: 0 auto 150px;
 }
-.development::before {
-    content: '';    
-    display: inline-block;
-    width: 2px;
-    height: 100%;
-    background-color:#BCF314;
+.development li {
+    line-height: 2.5em;
+    border: 1px solid #D7D7D9;
+    padding: 10px 20px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    transition: all .9s;
+}
+.development li:last-child {
+    margin-right: 0;
+}
+.development li:hover {
+    background-color: #D7D7D9;
 }
 .sub_btn {
     width: 100%;
@@ -348,15 +372,18 @@ h4.work_sub::before {
     vertical-align: -.12em;
     font-weight: 700;
 }
-.portfoliolink {
+.portfoliolink_box {
     width: 90%;
     margin: 50px auto;
     text-align: right;
     position: -webkit-sticky;
     position: sticky;
     bottom: 1vh;
+    /* position: fixed;
+    bottom: 1%;
+    right: 5%; */
 }
-.portfoliolink a {
+.portfoliolink_box a {
     font-size: .9em;
     width: 150px;
     text-align: center;
@@ -369,7 +396,7 @@ h4.work_sub::before {
                 -10px -8px 10px -5px rgba(174, 174, 192, .25),
                 10px 0px 10px -5px rgba(255, 255, 255, .8);
 }
-.portfoliolink a:hover {
+.portfoliolink_box:hover a {
     color: #2d2d2d;
     border-radius: 40px;
     background-color: rgba(255, 255, 255, .9);

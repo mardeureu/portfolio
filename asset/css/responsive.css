@@ -112,7 +112,6 @@
         width: 90%;
         margin: 0 auto;
         line-height: 3em;
-        padding-top: 40px;
         padding-bottom: 0;
     }
     .problems dl,
@@ -182,6 +181,11 @@
 /*1024 END*/
 }
 @media (max-width: 768px) {
+    /* global */
+    h2 {
+        font-size: 4.5em;
+        
+    }
     /* about */
     .logo-par p {
         font-size: .65em;
@@ -219,6 +223,23 @@
         width: 70vw;
         height: 60vw;
     }
+    /* work */
+    .swiper-container {
+        top: 0;
+    }
+    .swiper-pagination {
+        font-size: .5em;
+        top: 0;
+        right: 0;
+        text-align: center;
+        z-index: -1;
+    }
+    h5[data-swiper-parallax] {
+        font-size: .9em;
+    }
+    .progressbar {
+        top: 12px;
+        z
     /* contact */
 
     /* work sub */
@@ -289,7 +310,7 @@
     /* global */
     h2 {
         top: 25px;
-        font-size: 3.5em;
+        font-size: 3em;
     }
     header .header-wrap > a::before {
         width: 1em;
@@ -355,12 +376,18 @@
         top: 0;
     }
     .swiper-pagination {
-        padding-right: 5%;
-        font-size: .8em;
-        left: -15px;
+        font-size: .5em;
+        top: 0;
+        right: 0;
+        text-align: center;
+        z-index: -1;
     }
     h5[data-swiper-parallax] {
         font-size: .9em;
+    }
+    .progressbar {
+        top: 12px;
+        z-index: -1;
     }
 
 /*480 END*/

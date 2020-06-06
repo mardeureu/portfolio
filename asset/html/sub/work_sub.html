@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
+    <meta name="description" content="프론트엔드 정선희 포트폴리오 사이트입니다.">
     <title>gadja productions - work - JSH portfolio</title>
     <!-- css -->
     <link rel="stylesheet" href="../../css/common.css">
@@ -18,12 +18,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="../../js/work_sub.js"></script>
     <!-- favicon -->
+    <link rel="shortcut icon" href="../../img/favicon32.ico">
+    <link rel="apple-touch-icon-precomposed" href="../../img/favicon32.ico">
     <!-- og meta -->
-    <meta property="og:url" content="http://127.0.0.1:5500/asset/html/sub/work_sub.html"><!-- #0 1 2 바뀌는 url 어떻게 불러오는지! -->
-    <meta property="og:title" content="GADJA productions">
-    <meta property="og:description" content="welcome ">
-    <meta property="og:site_name" content="">
-    <meta property="og:image" content="">
+    <meta property="og:url" content="http://127.0.0.1:5500/asset/html/sub/work_sub.html">
+    <!-- #0 1 2 바뀌는 url 어떻게 불러오는지! -->
+    <meta property="og:url" content="https://mardeureu.github.io/portfolio/">
+    <meta property="og:title" content="jung-sunhee portfolio">
+    <meta property="og:description" content="&#128421; 프론트엔드 정선희 포트폴리오 웹사이트 입니다.">
+    <meta property="og:site_name" content="jung-sunhee portfolio">
+    <meta property="og:image" content="https://imgur.com/rHVuY5X">
     <meta property="og:type" content="website">
 </head>
 <body>
@@ -36,7 +40,7 @@
                     <li><a href="../../../index.html">home</a></li>
                     <li><a href="../about.html">about</a></li>
                     <li><a href="../work.html">work</a></li>
-                    <li><a href="../contact.html">contact</a></li>
+                    <li><a href="../contact.php">contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -45,17 +49,21 @@
     <!-- <div class="scroll_progress"> -->
     <div class="bar"></div>
     <h3></h3>
-    <div class="work_sub">
+    <section>
         <h4>프로젝트</h4>
-        <p class="project">
+        <p class="work_sub project">
         </p>
+    </section>
+    <section>
         <h4>사이트 맵</h4>
-        <ul class="sitemap">
+        <ul class="work_sub sitemap">
         </ul>
+    </section>
+    <section>
         <h4>반응형 웹 해상도 분기점</h4>
-        <ul class="breakpoints">
+        <ul class="work_sub breakpoints">
         </ul>
-    </div>
+    </section>
     <figure class="pofolmain"></figure>
     <div class="suggest">
         <div class="problems">
@@ -152,10 +160,15 @@
         </div>
     </div>
     <h4 class="gallery-name">사이트 갤러리</h4>
+    <div class="sticky-left"></div>
     <figure class="gallery"></figure>
-    <h4 class="work_sub">개선 내용</h4>
-    <p class="work_sub development"></p>
-    <div class="portfoliolink"><a href="#" target="_blank">사이트 바로가기</a></div>
+    <section>
+        <h4>개선 내용</h4>
+        <div class="deco">
+        </div>
+        <ul class="development"></ul>
+    </section>
+    <div class="portfoliolink_box"><a class="portfoliolink" href="" target="_blank">사이트 바로가기</a></div>
     <div class="sub_btn">
         <a href="#">PREV</a>
         <a href="#">NEXT</a>

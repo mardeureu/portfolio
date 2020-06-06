@@ -18,24 +18,26 @@
                 "480px"
             ],
             "problemsdt": [
-                "01 시멘틱 마크업",
-                "02 웹 접근성",
+                "01 HTML 마크업 문제",
+                "02 웹 접근성 문제",
                 "03 인터렉티브 웹"
                 ],
             "problemsdd": [
-                "이는 검색엔진과 웹 접근성 외에도 기능 확장이 추가되었습니다. 현재 세계 70% 검색 점유율을 가진 구글 검색은 검색 로봇이 자동으로 탐색을 하는데 구조적이지 않은 마크업은 검색엔진에서 데이터 추출하기 어려워 웹 크롤링 되지 않는 문제점이 발생 할 수 있습니다. 이는 시멘틱 마크업만으로도 충분히 개선할 수 있습니다. 시멘틱 마크업 외에도 html의 rel 속성으로 검색엔진 최적화에 도움이 될 수 있습니다.",
-                "웹 접근성이란 장애와 상관없이 모든 사람이 접근할 수 있는 것을 의미합니다. 마치 아티스트 안은미의 작품 &lt;대심&gt;과 &lt;안심&gt;이 누구나 예술을 할 수 있다는 것을 보여준 것과 같습니다. 웹 접근성을 준수하면 시각장애인들이 사용하는 보조과학기술인 스크린리더기가 올바르게 동작하고, 운동장애인들이 웹을 탐색하지 위해 사용하는 키보드 오버레이로 정확하게 사이트를 탐색할 수 있습니다. 이를 위해서는 W3C표준에 따르고 의미론적 요소 사용을 지향해야 합니다. W3C 웹접근성 표준 외에도 스크린리더기를 위한 aria 속성을 추가하고, 시각적 안정을 위한 명도대비 접근성을 준수하며, CSS, JAVAscript 문서에서도 웹 접근성을 고려하여 코딩합니다.",
-                "현재 모션과 인터렉션은 웹에서 새로운 효과는 아니지만 사용자의 관심을 끌 수 있는 흥미롭고 확실한 방법입니다. 시각적으로 흥미롭고 사용자와 상호작용하는 사이트는 사용자를 웹사이트에 더 오래 머물게 합니다. 시각은 본능적으로 움직이는 요소에 이끌리기 때문에 특히 관심 범위가 젊은 아티스트를 찾는 젊은 타깃을 대상으로 효과적입니다."
+                "현재 웹사이트의 문서선언형식은 HTML5이지만 구조는 div, span요소로 이루어져 있습니다. 의미론적인 마크업이 아니기 때문에 검색 엔진 최적화의 문제와 HTM5 웹 접근성 강화, 문법 간소화, 브라우저 성능과 함께 추가된 기능들로 코드를 읽고 의미를 인식할 수 있는 지능형 웹을 사용하지 못하고 있습니다. 모든 기능적 부분이 자바스크립트로 처리되었습니다. 이 문제는 웹 사이트 규모에 대비하여 로딩속도가 느려지는 문제가 발생할 수 있습니다.",
+                "접근성이란 폭넓게 말하자면, 어떤 사이트가 접근 가능하다거나 액세스 가능하다고 할 때 그 사이트의 콘텐츠를 사용할 수 있고 말 그대로 누구든 사이트에서 제공하는 기능을 조작할 수 있음을 의미합니다. 별다른 생각 없이 모든 사용자가 키보드, 마우스 또는 터치스크린을 보고 사용할 수 있고, 자신과 똑같은 방식으로 웹페이지 콘텐츠와 상호 작용할 수 있을 거라 여기 기기에 십상입니다. 이런 생각을 바탕으로 웹사이트를 개발하면 어떤 사람들에게는 문제없이 잘 작동하지만, 또 어떤 사람들에게는 단순히 성가신 수준부터 아예 웹사이트를 이용하지 못할 정도의 수준까지 다양한 문제를 일으킬 수 있습니다.  '전형적인' 사용자라는 좁은 범위를 벗어난 곳에 있는 사용자, 즉 예상하는 것과는 다르게 웹페이지에 액세스하거나 상호 작용할지도 모르는 사용자가 경험하는 사용 환경을 지칭합니다. 구체적으로 말하자면, 어떤 유형의 결함이나 장애를 가진 사용자를 배려한 사용 환경을 말합니다. 여기서 말하는 사용 환경은 물리적인 것이 아닌 환경이나 일시적 환경일 수도 있다는 점입니다. ",
+                "현재 모션과 인터렉션은 웹에서 새로운 효과는 아니지만 사용자의 관심을 끌 수 있는 흥미롭고 확실한 방법입니다. 하지만 현재 웹페이지는 정적이며 인터렉션과 모션이 없어 다소 지루하게 느껴지기까지 합니다.. 시각적으로 흥미롭고 사용자와 상호작용하는 사이트는 사용자를 웹사이트에 더 오래 머물게 합니다. 시각은 본능적으로 움직이는 요소에 이끌리기 때문에 특히 관심 범위가 젊은 아티스트를 찾는 젊은 타깃을 대상으로 효과적입니다."
             ],
             "suggestiondt": [
-                "01 Semantics markup",
-                "02 Web Accessibility",
-                "03 Interactive Web"
+                "01 HTML 마크업 리노베이션",
+                "02 웹 접근성 개선",
+                "03 반응형웹",
+                "04  인터렉티브 웹"
             ],
             "suggestiondd": [
-                "Semantics markup means using code that is consistent with the meaning to code the website. It is a great advantage of information being preferentially exposed because the search robot of Google which has 70% worldwide search engine extracts data apace and regards them as credible information.Semantic markup for the optimisation of search engine is a recommended method from Google in practice.",
-                "Web accessibility means that everyone, regardless of one’s disability, can access to the web. It is like the implication of art work by Eun-Me Ahn, &lt;Ahnshim Dance&gt; and &lt;Daeshim Dance&gt;, that everyone can do art. If complying with web accessibility, the screen reader which is assistive technology for vision impairment will operate properly, and people with disabiliteis can use keyboard overlays to map the site accurately. In order for us to make it possible, we need to follow the W3C standard and aim to use semantic element. Apart from the W3C web accessibility stardard, we add Aria for screen readers, comply with color and contrast accessibility for visual stability, then code our website considering the web accessibility of CSS and JAVA script documet as well.",
-                "Dynamic website that interacts with users evokes user’s attention and keeps them stay longer. It can create sensory motion in the website interface because it uses Bezier to produce motion directly, not designing with basic element based on program. Also, any animation motions more accurately and faster than other extension because it is embodied with extension of svg."
+                "이는 검색엔진과 웹 접근성 외에도 기능 확장이 추가되었습니다. 현재 세계 70% 검색 점유율을 가진 구글 검색은 검색 로봇이 자동으로 탐색을 하는데 구조적이지 않은 마크업은 검색엔진에서 데이터 추출하기 어려워 웹 크롤링 되지 않는 문제점이 발생 할 수 있습니다. 이는 시멘틱 마크업만으로도 충분히 개선할 수 있습니다. 무료 자연 검색결과에서 웹사이트가 더 높은 순위에 표시되도록 하기 위한 검색엔진 최적화(SEO)는 명확한 페이지 제목, 쉽게 설명되어 있는 링크 텍스트 등 검색엔진에서 웹사이트에 대한 정보를 쉽게 확인할 수 있도록 하는 이러한 작업은 대부분 잠재고객의 사이트 이용에도 많은 도움이 됩니다.",
+                "아티스트 안은미의 작품 <대심>과 <안심>은 시각장애 운동장애와 관계 없이 누구나 예술을 할 수 있다는 것을 증명했습니다. 웹 접근성도 같은 맥락으로 접근할 수 있습니다. 웹 접근성을 준수하면 시각장애인들이 사용하는 보조과학기술인 스크린리더기가 올바르게 동작하고, 운동장애인들이 웹을 탐색하지 위해 사용하는 키보드 오버레이로 정확하게 사이트를 탐색할 수 있습니다. 이를 위해서는 W3C표준에 따르고 의미론적 요소 사용을 지향해야 합니다. W3C 마크업 표준 문법 외에도 aria-landmark 속성을 추가하고, WCAG 대비를 지켜 시각, 운동, 인지. 청각 장애인뿐 아니라 노인 일시적 장애로 불편을 격을 수 있는 누구나를 위한 것입니다. 접근성 문제를 해결하면 모든 사람의 경험이 개선됩니다.",
+                "웹 서핑을 위한 휴대기기의 사용량이 엄청난 속도로 증가하고 있습니다. 휴대기기는 대개 화면 크기가 제한되며, 콘텐츠가 화면에 배치되는 방식에 따라 다른 접근방식이 필요합니다. 휴대폰, 태블릿, 데스크톱, 웨어러블 등 다양한 화면 크기가 존재합니다. 다양한 기기에 화면 크기에 맞게 사이트를 만드는 것이 중요합니다. 최적의 환경을 제공하기 위해, 모바일 브라우저는 데스크톱 화면 너비에서 웹페이지를 렌더링한 다음, 글꼴 크기를 늘리고 콘텐츠의 배율을 조정하여 화면에 맞추는 방식으로 콘텐츠를 더 보기 좋게 만들고 이 경우 글꼴 크기가 사용자에게 일관되지 않게 나타날 수 있으며, 사용자가 콘텐츠를 보고 상호작용하기 위해 두 번 탭하거나 손가락으로 확대할 수 있어야 합니다. 또한 화면이 작은 휴대폰이든 큰 데스크톱 모니터에든 상관없이, 다양한 화면 크기에 맞게 페이지의 콘텐츠를 재배치할 수 있습니다. 응답성을 개선하기 위해 CSS 미디어 쿼리를 사용할 수 있습니다.",
+                "현재 모션과 인터렉션은 웹에서 새로운 효과는 아니지만 사용자의 관심을 끌 수 있는 흥미롭고 확실한 방법입니다. 시각적으로 흥미롭고 사용자와 상호작용하는 사이트는 사용자를 웹사이트에 더 오래 머물게 합니다. 시각은 본능적으로 움직이는 요소에 이끌리기 때문에 특히 관심 범위가 젊은 아티스트를 찾는 젊은 타깃을 대상으로 효과적입니다."
             ],
             "gallery": [
                 "../../img/gadja_01_main.jpg",
@@ -45,23 +47,34 @@
                 "../../img/sub/gadja_07_artist.jpg",
                 "../../img/sub/gadja_08_production_list.jpg",
                 "../../img/sub/gadja_09_productions.jpg",
+                "../../img/sub/gadja_10_tours.jpg",
                 "../../img/sub/gadja_11_contact.jpg"
             ],            
             "galleryalt": [
                 "gadja 프로덕션 메인 페이지 이미지 이미지",
+                "gadja 프로덕션 메뉴 페이지 이미지 이미지",
                 "gadja 프로덕션 어바웃 페이지 이미지",
                 "gadja 프로덕션 아티스트 목록 페이지 이미지",
                 "gadja 프로덕션 아티스트 상세 페이지 이미지",
                 "gadja 프로덕션 프로덕션 목록 페이지 이미지",
                 "gadja 프로덕션 프로덕션 상세 페이지 이미지",
+                "gadja 프로덕션 투어 페이지 이미지",
                 "gadja 프로덕션 컨텍트 상세 페이지 이미지"
             ],
             "link": "https://mardeureu.github.io/gadja/",
-            "development" : "Web accessibility means that everyone, regardless of one’s disability,  can access to the web. It is like the implication of art work by Eun-Me Ahn, &lt;Ahnshim Dance&gt; and &lt;Daeshim Dance&gt;, that everyone can do art. If complying with web accessibility, the screen reader which is assistive technology for vision impairment will operate properly, and people with disabiliteis can use keyboard overlays to map the site accurately. In order for us to make it possible, we need to follow the W3C standard and aim to use semantic element. Apart from the W3C web accessibility stardard, we add Aria for screen readers, comply with color and contrast accessibility for visual stability, then code our website considering the web accessibility of CSS and  JAVA script documet as well."
+            "development" : [
+                "웹 표준, 웹 접근성 준수",
+                "불어 - 영어 언어 전환 기능 개선",
+                "컨텐츠 역할 설정에 따른 필요 UX 및 기능 개선",
+                "메인 네비게이션에서 상호이동이 편리한 로컬 네비게이션 추가",
+                "통일된 디자인 개편 및 정보 재구성",
+                "반응형 웹 제작",
+                "공연/ 전시 스케줄러 기능 추가"
+            ]
         },
         {
             "title": "정식품",
-            "project": "정식품", 
+            "project": "우리나라 두유 역사의 첫 장을 연 정식품은 1972년 설립되어 지난 40여년동안 베지밀로 한국 및 세계의 두유산업을 선도해온 두유 전문회사입니다. 40여 년간 두유 산업을 이끌어 온 1등 기업으로서 연구기관이나 대학병원과의 학술적인 교류를 통해 다양한 제품을 개발하는 것은 물론, 콩의 기능성에 대한 연구도 꾸준히 진행하고 있습니다. 그뿐만 아니라 혜춘장학회, 한국심장재단, 굿네이버스, 한국혈액암 협회에 지속적으로 지원하며 소비자 분들에게 받은 사랑을 다시 나누는 사회공헌 활동도 실천해 나가고 있습니다.  공정거래 자율준수 도입으로 존경받는 기업이지만 메인 디자인 개편과 웹 사이트 리노베이션이 필요합니다.", 
             "sitemap": [
                 "기업소개",
                 "제품소개",
@@ -92,24 +105,24 @@
                 "480px"
             ],
             "problemsdt": [
-                "01 플래시사용으로 인한 호환 문제",
-                "02 문서형식 xhtml으로 시멘틱 요소 사용의 문제",
-                "03 UI/UX 개선 필요성의 문제"
+                "01 플래시 호환 이슈",
+                "02 문서선언형식 xhtml",
+                "03 UI/UX 개선 필요"
             ],
             "problemsdd": [
-                "Semantics markup means using code that is consistent with the meaning to code the website. It is a great advantage of information being preferentially exposed because the search robot of Google which has 70% worldwide search engine extracts data apace and regards them as credible information.Semantic markup for the optimisation of search engine is a recommended method from Google in practice.",
-                "Web accessibility means that everyone, regardless of one’s disability, can access to the web. It is like the implication of art work by Eun-Me Ahn, &lt;Ahnshim Dance&gt; and &lt;Daeshim Dance&gt;, that everyone can do art. If complying with web accessibility, the screen reader which is assistive technology for vision impairment will operate properly, and people with disabiliteis can use keyboard overlays to map the site accurately. In order for us to make it possible, we need to follow the W3C standard and aim to use semantic element. Apart from the W3C web accessibility stardard, we add Aria for screen readers, comply with color and contrast accessibility for visual stability, then code our website considering the web accessibility of CSS and JAVA script documet as well.",
-                "Dynamic website that interacts with users evokes user’s attention and keeps them stay longer. It can create sensory motion in the website interface because it uses Bezier to produce motion directly, not designing with basic element based on program. Also, any animation motions more accurately and faster than other extension because it is embodied with extension of svg."
+                "많은 브라우저에서 더 이상 플래시를 지원하지 않아 메인 비주얼을 플래시로 처리하는것을 적절하지 않습니다  스마트폰을 사용하여 웹사이트를 방문하는 잠재고객이 늘고 있습니다.  스마트폰에서는 플래시를 재생하거나 복잡한 양방향 그래픽을 제대로 표시하지 못합니다. 스마트폰으로 사이트를 방문하는 잠재고객을 놓치지 않으려면 전체 웹사이트를 둘러보는 것은 아니더라도 최소한 중요한 정보는 확인할 수 있도록 해야 합니다.",
+                "html 표준의 가장 새로운 버전으로 HTML5를 통해 리치 미디어의 기술 지원 뿐만이 아니라, 사용자 및 로컬 데이터를 웹 서버 사이에 보다 간편하면서도 효과적으로 교환할 수 있는 웹 애플리케이션을 개발하기 위한 확장 기술 지원를 제공하는 새로운 기능도 제공됩니다. 뿐만아니라 html5에서 시멘틱 요소는 검색엔진최적화와 웹접근성에도 도움이 됩니다.",
+                "너무 큰 이벤트, 광고 배너는 사용자와 검색순위에 신뢰도를 떨어트리고, 사이트를 탐색하기 이전에 회원가입을 요구하는 것은 사용자를 떠나게 만듭니다. 사용자에게 익숙하지 않거나 오래된 UI/UX는 혼란스러울 수 있습니다. 또한 사용자는 원하는 것을 찾기 위해 긴 옵션 목록을 스크롤할 정도의 인내심이 없기때문에 사용성이 떨어지지 않으면서도, 최대한 항목 수가 적도록 메뉴를 재구성할 필요가 있습니다."
             ],
             "suggestiondt": [
-                "01 메인 비주얼 html5 요소 대체",
-                "02 html5 dtd",
-                "03 UI/UX 개선"
+                "01 메인 비주얼 video 요소 대체",
+                "02 문서선언형식 변경",
+                "03 UI/UX 개선안"
             ],
             "suggestiondd": [
                 "많은 브라우저에서 더 이상 플래시를 지원하지 않아 메인 비주얼을 플래시로 처리하는것을 적절하지 않습니다 또한, 스마트폰을 사용하여 웹사이트를 방문하는 잠재고객이 늘고 있습니다. 이러한 휴대전화에서는 플래시를 재생하거나 복잡한 양방향 그래픽을 제대로 표시하지 못합니다. 휴대전화로 사이트를 방문하는 잠재고객을 놓치지 않으려면 전체 웹사이트를 둘러보는 것은 아니더라도 최소한 중요한 정보는 확인할 수 있도록 해야 합니다. ",
                 "html 표준의 가장 새로운 버전으로 HTML5를 통해 리치 미디어의 기술 지원 뿐만이 아니라, 사용자 및 로컬 데이터를 웹 서버 사이에 보다 간편하면서도 효과적으로 교환할 수 있는 웹 애플리케이션을 개발하기 위한 확장 기술 지원를 제공하는 새로운 기능도 제공됩니다. 뿐만아니라 html5에서 시멘틱 요소는 검색엔진최적화와 웹접근성에도 도움이 됩니다.",
-                "사용자에게 익숙하지 않거나 오래된 UI/UX는 혼란스러울 수 있습니다. 불필요한 정보 없이 웹사이트를 최대한 간결하고 알기 쉽게 만들어야 합니다. 링크와 이미지, 텍스트가 너무 많으면 잠재고객에게 혼란만 가중시킬 수 있습니다. 잘 정리되어 있는 깔끔한 웹사이트를 제공해야 사용자가 편안하게 웹사이트에 머무를 수 있고 사용자의 반응을 유도할 수 있습니다."
+                "이벤트, 광고배너는 최상단 가로형 레이아웃형 배너로 배치하여 다른 컨텐츠를 가리지 않아야하며, 회원가입 조건 없이 게스트 자격으로 편리하고 간단하게 사이트를 탐색 할 수 있어야 합니다. 이는 사용자들이 빠르고 편리하다고 느낍니다. 회원가입은 정보입력을 간소화하고 레이블 작업을 올바로 수행하고 유효성 검사를 실시간으로 수행하게 합니다. 클릭투콜 버튼을 사용하여 호출 기능이 있는 기기에서 사용자가 이 링크를 누르기만 하면 전화를 걸 수 있습니다. 대부분의 휴대기기에서는, 번호를 누르기 전에 사용자에게 확인 메시지가 표시되거나 번호 처리 방식을 물어보는 메뉴가 사용자에게 표시됩니다. 이는 매우 편리하면서 강력한 기능입니다. 불필요한 정보 없이 웹사이트를 최대한 간결하고 알기 쉽게 만들어야 합니다. 링크와 이미지, 텍스트가 너무 많으면 잠재고객에게 혼란만 가중시킬 수 있습니다. 잘 정리되어 있는 깔끔한 웹사이트를 제공해야 사용자가 편안하게 웹사이트에 머무를 수 있고 사용자의 반응을 유도할 수 있습니다."
             ],
             "gallery": [
                 "../../img/vgm_01_main.jpg",
@@ -132,7 +145,14 @@
                 "정식품 회원가입 페이지 이미지"
             ],
             "link": "https://mardeureu.github.io/project_jungfoods/",
-            "development" : "Web accessibility means that everyone, regardless of one’s disability, can access to the web. It is like the implication of art work by Eun-Me Ahn, &lt;Ahnshim Dance&gt; and &lt;Daeshim Dance&gt;, that everyone can do art. If complying with web accessibility, the screen reader which is assistive technology for vision impairment will operate properly, and people with disabiliteis can use keyboard overlays to map the site accurately. In order for us to make it possible, we need to follow the W3C standard and aim to use semantic element. Apart from the W3C web accessibility stardard, we add Aria for screen readers, comply with color and contrast accessibility for visual stability, then code our website considering the web accessibility of CSS and  JAVA script documet as well."
+            "development" : [
+                "웹 표준, 웹 접근성 준수",
+                "정보구조도 재설계 후 메뉴 재구성",
+                "메인 플래시 비디오 요소 대체",
+                "통일된 디자인 개편 및 정보 재구성",
+                "반응형 웹 제작",
+                "로그인, 회원가입 유효성 검사 기능 추가"
+            ]
         }
     ]
 }

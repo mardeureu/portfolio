@@ -2,6 +2,11 @@ header .header-wrap > a::before {
     border-top: 1px solid #ededed;
     border-bottom: 1px solid #ededed;
 }
+header .header-wrap > a:hover::before,
+header .header-wrap > a.active::before  {
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+}
 header .header-wrap nav ul li {
     transition: all .6s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
@@ -14,12 +19,22 @@ header .header-wrap nav ul li a {
 body {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
 }
 main {
     display: block;
+}
+main .bg {
     width: 100%;
-    background-color: transparent;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
 }
 main .circleshadow {
     position: absolute;
@@ -188,102 +203,55 @@ h2 {
 .txt .bottom-txt dl dd:hover a {
     color: #BCF314; 
 }
-/* background */
-.bg {
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
+/* motion */
+.motion {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -2;
-}
-.bg-1 {
-    background-color: #2D2D2D;
-    height: 20vh;
-    width: 100%;
-    /* animation: widthzero 2s alternate both; */
-    position: fixed;
-    top: 0;
-    right: -100%;
     z-index: -1;
-}
-.bg-2 {
-    background-color: #2D2D2D;
     width: 100%;
-    height: 20vh;
-    /* animation: widthzero 2s 1s alternate both; */
-    position: fixed;
-    top: 20%;
-    right: -100%;
-    z-index: -1;
-}
-.bg-3 {
-    background-color: #2D2D2D;
-    height: 20vh;
-    width: 100%;
-    /* animation: widthzero 2s 2s alternate both; */
-    position: fixed;
-    top: 40%;
-    right: -100%;
-    z-index: -1;
-}
-.bg-4 {
-    background-color: #2D2D2D;
-    height: 20vh;
-    width: 100%;
-    /* animation: widthzero 2s 3.2s alternate both; */
-    position: fixed;
-    top: 60%;
-    right: -100%;
-    z-index: -1;
-}
-.bg-5 {
-    background-color: #2D2D2D;
-    height: 20vh;
-    width: 100%;
-    /* animation: widthzero 2s 3.5s alternate both; */
-    position: fixed;
-    bottom: 0;
-    right: -100%;
-    z-index: -1;
-}
-@keyframes widthzero {
-    0%{
-        right: 100%;
-    }
-    100%{
-        right: 0%;
-    }
-}
-/* motion */
-.motion {
-    perspective: 1000px;
-    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    animation: pers 3.5s .7s infinite both alternate;
 }
 .motion .one {
     width: 40vh;
     height: 40vh;
-    border: 1px solid #fff;
     position: absolute;
     top: 0;
     left: 10%;
-    z-index: 3;
     transform: translateX(0) translateZ(0) rotateZ(0) rotateX(0deg);
     animation: onemotion 3.5s .7s infinite both alternate;
 }
 @keyframes onemotion {
     0% {
         border-radius: 50%;
-        border: 1px solid #666;
-        transform: translateX(0) translateZ(200px) rotateZ(0deg) rotateX(10deg) rotateY(20deg) scale3d(1, 1, 1);
+        border: 1px dotted #BCF314;
+        background-color: rgba(0, 0, 0, .2);
+        transform: translateX(100px) translateY(50px) rotateZ(0deg) rotateX(10deg) rotateY(20deg) scale3d(1, 1, 1);
     }
     50% {
         background-color: rgba(255, 255, 255, .1);
     }
+    60% {
+        border: 1px solid transparent;
+    }
     100% {
-        border: 1px solid #333;
-        transform: translateX(500px) translateZ(300px) rotateZ(280deg) rotateX(160deg) rotateY(120deg) scale3d(1.8, 1.8, 1);
+        top: 50%;
+        border: 1px solid rgba(188, 243, 20, .5);
+        transform: translateX(500px) translateY(-150px) rotateZ(80deg) rotateX(160deg) rotateY(120deg) scale3d(1.8, 1.8, 1);
+    }
+}
+@keyframes pers {
+    0% {
+        perspective: 20000px;
+    }
+    50% {
+        perspective-origin: right;
+        perspective: 800px;
+    }
+    100% {
+        perspective: 5000px
     }
 }
 .motion .one:nth-last-of-type(1) {
