@@ -9,10 +9,5 @@ $(document).ready(function(){
         $(this).next().slideToggle();
     });
 
-    //scroll
-    $('*').scroll(function(){
-        
-    });
-
 });
 

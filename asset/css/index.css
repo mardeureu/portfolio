@@ -36,63 +36,6 @@ main .bg {
     z-index: -1;
     overflow: hidden;
 }
-main .circleshadow {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
-    width: 20vw;
-    height: 20vw;
-    box-shadow: inset 4px 4px 6px -7px #fff,
-                inset -4px -4px 15px -5px #aeaec0,
-                4px 4px 6px -7px #fff,
-                -4px -4px 10px -8px #aeaec0;
-    position: absolute;
-    top: calc(50% - 10vw);
-    left: calc(50% - 10vw);
-    transform: scale3d(1, 1, 1) ;
-    animation: circleshadow 3.5s cubic-bezier(0.7, 0.38, 0.36, 0.97) infinite both alternate;
-}
-@keyframes circleshadow {
-    0% {
-        box-shadow: inset 4px 4px 6px -6px #BCF314,
-                    inset -4px -4px 15px -5px #D7D7D9,
-                    4px 4px 6px -9px #BCF314,
-                    -4px -4px 10px -8px #D7D7D9;
-        transform: rotateZ(0deg);
-    }
-    20% {
-        box-shadow: inset 4px 4px 6px -6px #f5f7fa,
-                    inset -4px -4px 15px -5px #c3cfe2,
-                    4px 4px 6px -9px #f5f7fa,
-                    -4px -4px 10px -8px #c3cfe2;
-    }
-    40% {
-        box-shadow: inset 4px 4px 6px -6px #fdfcfb,
-                inset -4px -4px 15px -5px #e2d1c3,
-                4px 4px 6px -9px #fdfcfb,
-                -4px -4px 15px -8px #d1fdff;
-    }
-    60% {
-        shadow: inset 4px 4px 10px -10px #e5b2ca,
-                inset -4px -4px 10px -5px #97d9e1,
-                4px 4px 10px -7px #434343,
-                -4px -4px 10px -8px #93a5cf;
-    }
-    80% {
-        box-shadow: inset 4px 4px 6px -6px #d5dee7,
-                inset -4px -4px 8px -5px #dfe9f3,
-                4px 4px 15px -3px #c9ffbf,
-                -4px -4px 12px -8px #ffafbd;  
-    }
-    100% {
-        box-shadow: inset 4px 4px 6px -6px #BCF314,
-                    inset -4px -4px 15px -5px #D7D7D9,
-                    4px 4px 6px -9px #BCF314,
-                    -4px -4px 10px -8px #D7D7D9;
-        transform: rotateZ(360deg);
-    }
-}
 /* text */
 h2 {
     width: 0;

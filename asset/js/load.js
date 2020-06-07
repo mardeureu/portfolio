@@ -1,0 +1,1 @@
+$(window).load("../../index.html #loading");
