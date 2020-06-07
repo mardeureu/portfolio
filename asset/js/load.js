@@ -1,1 +1,3 @@
-$(window).load("../../index.html #loading");
+$(window).on('load',function(){
+    $('#loading').fadeOut();
+});
